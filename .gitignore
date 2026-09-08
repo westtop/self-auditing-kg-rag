@@ -4,9 +4,10 @@
 **/.ipynb_checkpoints/
 repro_out/archive_*/
 repro_out/pdf_chunks.json
-*.pdf
+*.pdf.txt
 
 # 원본 문헌 (저작권)
+*.pdf
 
 # 로컬 캐시
 __pycache__/

@@ -445,7 +445,7 @@ class ConflictDetector:
 # Step 3: LLM Context Auditor (simplified — uses rules + heuristics)
 # ============================================================
 class ContextAuditor:
-    """Assigns Confidence Score and validates conflicts contextually.
+    """Assigns a categorical Confidence Level and validates conflicts contextually.
     In production, this uses GPT-4o. Here we use heuristic rules."""
 
     def audit(self, triplet, conflict_type, conflict_details, all_triplets):
@@ -558,7 +558,7 @@ class KnowledgeGraph:
             "paper": triplet.get("paper", "")
         }
 
-        # Confidence Level per paper Section 3.2 (categorical, not a raw
+        # Confidence Level per paper Section 3.5 (categorical, not a raw
         # confidence threshold): PASS or FALSE_ALARM -> Verified; T3
         # confirmed -> Disputed; T1/T2 confirmed -> Conflicted. Based on
         # final_conflict alone so it works the same whether audit_result
