@@ -1,0 +1,22 @@
+# Reproduction environment. Versions recorded in repro_out/MANIFEST_v2.json
+# under "environment" for the reported run (Python 3.12.7, Windows 11).
+
+# core
+numpy
+scipy
+matplotlib
+networkx
+scikit-learn        # TF-IDF baseline (B1) and surface-similarity recall
+
+# PDF text extraction (only needed to regenerate the parsed chunks)
+pdfplumber
+pypdf
+PyMuPDF             # imported as `fitz`; optional alternative loader
+
+# model clients
+openai
+anthropic
+groq                # alternative client for the local open-weight judge
+
+# notebook
+jupyterlab
