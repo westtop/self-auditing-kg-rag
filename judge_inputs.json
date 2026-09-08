@@ -1,0 +1,1556 @@
+{
+ "queries": [
+  "What is the optimal water temperature for wasabi hydroponic cultivation?",
+  "What EC level maximizes wasabi rhizome growth?",
+  "What is the recommended pH range for the wasabi nutrient solution?",
+  "How does low dissolved oxygen (DO) affect wasabi rhizome yield?",
+  "What DO concentration is required for healthy wasabi root growth?",
+  "How does PPFD influence wasabi growth under artificial light?",
+  "What photoperiod is optimal for wasabi under artificial lighting?",
+  "How does shading rate affect wasabi AITC content?",
+  "What air temperature range is suitable for wasabi seedlings?",
+  "How does substrate type affect DO and root nitrogen in wasabi?",
+  "What is the effect of nutrient concentration on rhizome enlargement?",
+  "How does hydroponic vs natural cultivation affect wasabi water temperature?",
+  "How does high temperature damage wasabi growth?",
+  "What AITC yield difference exists between soil- and water-grown wasabi?",
+  "Why do reported pH values for wasabi vary across studies?",
+  "What CO2 enrichment level benefits greenhouse wasabi?",
+  "How does VPD affect wasabi in greenhouse conditions?",
+  "What altitude and climate suit wasabi glucosinolate accumulation?",
+  "How does dissolved oxygen interact with water temperature for wasabi?",
+  "What are the key parameters for indoor wasabi production under artificial light?"
+ ],
+ "answers": {
+  "B1": {
+   "0": "The optimal water temperature for wasabi hydroponic cultivation is not explicitly mentioned in the provided text chunks.",
+   "1": "The text does not provide specific information about the EC level that maximizes wasabi rhizome growth.",
+   "2": "The recommended pH range for the wasabi nutrient solution is not explicitly mentioned in the provided text chunks.",
+   "3": "The provided text chunks do not contain information on how low dissolved oxygen (DO) affects wasabi rhizome yield.",
+   "4": "The text does not provide specific information on the dissolved oxygen (DO) concentration required for healthy wasabi root growth. However, it emphasizes the importance of dissolved oxygen for root formation and growth in general, noting that lower DO concentrations can delay root formation and reduce root growth metrics.",
+   "5": "The text does not provide specific information on how PPFD (Photosynthetic Photon Flux Density) influences wasabi growth under artificial light. However, it mentions that extending day length with supplemental lighting enhances wasabi growth recovery, suggesting that light conditions, including PPFD, could play a role in wasabi growth.",
+   "6": "The text does not provide specific information about the optimal photoperiod for wasabi under artificial lighting.",
+   "7": "The shading rate affects wasabi AITC content by influencing the growth conditions. Optimal shading for wasabi cultivation is around 10%, while shading rates between 30-70% are also mentioned. Shading impacts the overall growth and yield of wasabi, which can indirectly affect the AITC content, as it is related to the glucosinolate levels in the plant.",
+   "8": "The suitable air temperature range for wasabi seedlings is around 18-23°C.",
+   "9": "The substrate type affects wasabi's root nitrogen and dissolved oxygen (DO) levels, as different supporting materials influence the plant's biomass and root characteristics. For instance, wasabi plantlets achieved the greatest biomass when grown in vermiculite, indicating that substrate choice can significantly impact plant growth and nutrient uptake.",
+   "10": "The text does not provide specific information on the effect of nutrient concentration on rhizome enlargement.",
+   "11": "The water temperature for hydroponic wasabi cultivation reached a maximum of 17.8°C, and there was no significant difference compared to natural cultivation.",
+   "12": "High temperatures can damage wasabi growth by reducing growth and development, as observed when air temperatures were not maintained at optimal levels. Specifically, maintaining maximum temperatures at 35°C or lower is crucial, as higher temperatures can negatively impact the plant's growth.",
+   "13": "No significant differences were found in the mean ITC levels between soil- and water-grown wasabi rhizomes. The major ITC, allyl ITC, was present at 941.3 mg/kg in soil-grown and 1371.0 mg/kg in water-grown rhizomes, contributing 90-93% of the total ITC.",
+   "14": "Reported pH values for wasabi vary across studies due to differences in cultivation conditions, such as nutrient solution temperatures and the specific nutrient requirements of wasabi plants. Wasabi is ammonium-sensitive and nitrate-preferring, which influences its growth under different pH conditions. Additionally, variations in element concentration profiles in the plants can affect growth, leading to differing optimal pH values reported in various studies.",
+   "15": "The text does not provide specific information about the CO2 enrichment level that benefits greenhouse wasabi.",
+   "16": "Vapor pressure deficit (VPD) affects wasabi in greenhouse conditions by requiring it to be at or below 2.0 kPa for optimal growth. Wasabi thrives with soil moisture at 95% field capacity and light levels between 500 and 830 mmol·m²·s⁻¹, with maximum net assimilation occurring at 828 mmol·m²·s⁻¹.",
+   "17": "Wasabi glucosinolate accumulation is suited to an altitude of 7.0, with clean and sufficient irrigation water.",
+   "18": "Dissolved oxygen levels in water are influenced by temperature, as indicated by Butcher and Covington's analysis of temperature dependence on dissolved oxygen. While specific data on wasabi is not provided, the general principle is that water temperature affects dissolved oxygen availability, which is crucial for plant processes.",
+   "19": "The key parameters for indoor wasabi production under artificial light include maintaining appropriate soil pH levels and ensuring adequate dissolved oxygen concentration in the root zone."
+  },
+  "B2": {
+   "0": "The optimal water temperature for wasabi hydroponic cultivation is not directly provided in the given edges. However, wasabi typically thrives in cool, running water conditions, often around 10-15°C (50-59°F) in traditional cultivation settings. For precise hydroponic conditions, further specific data would be needed.",
+   "1": "The provided knowledge graph edges do not contain specific information about the electrical conductivity (EC) level that maximizes wasabi rhizome growth. The edges primarily discuss concentrations of boron (B) and other conditions related to plant growth, but not the EC level directly related to wasabi rhizome growth. Additional data or research would be needed to determine the optimal EC level for wasabi.",
+   "2": "The recommended pH range for the wasabi nutrient solution is not directly provided in the given edges.",
+   "3": "The provided knowledge graph edges do not contain information directly related to the effect of low dissolved oxygen (DO) on wasabi rhizome yield. The edges focus on relative humidity (RH) and electrical conductivity (EC) in various conditions, but do not address dissolved oxygen or its impact on wasabi. Additional information or sources would be needed to answer this question.",
+   "4": "The provided knowledge graph edges do not contain specific information about the dissolved oxygen (DO) concentration required for healthy wasabi root growth. The edges mainly discuss DO concentrations in the context of weeping fig cuttings and other unrelated conditions. For accurate information on wasabi root growth, additional sources or research specific to wasabi cultivation would be needed.",
+   "5": "PPFD (Photosynthetic Photon Flux Density) influences wasabi growth under artificial light by determining the amount of light available for photosynthesis. Different PPFD levels can be set at the planting panel surface, such as 60, 110, 150, and 290 µmol m-2 s-1, which are then converted to different levels at 30 cm above the planting panel. These levels affect the growth rate and health of the wasabi plants. Additionally, the duration of light exposure, such as 8, 12, or 16 hours per day, also plays a crucial role in wasabi growth under artificial lighting conditions. Adjusting these parameters can optimize growth conditions for wasabi.",
+   "6": "The optimal photoperiod for wasabi under artificial lighting is a 12/12 light/dark cycle, as indicated by experiments and indoor cultivation practices.",
+   "7": "The provided edges do not contain information about the effect of shading rate on wasabi AITC content. To understand this relationship, additional data specifically linking shading rates to AITC content in wasabi would be required.",
+   "8": "The suitable air temperature range for wasabi seedlings is likely between 12-15°C from November to April, as this is the average daily temperature during those months.",
+   "9": "The substrate type can influence the dissolved oxygen (DO) and root nitrogen levels in wasabi cultivation, primarily through its impact on the electrical conductivity (EC) of the nutrient solution. Different substrates may require adjustments in the nutrient solution's concentration, which is reflected in the EC values. For instance, various nutrient solutions have different EC levels, such as 0.6 for 25% Enshi nutrient solution and 2.4 for 100% Enshi nutrient solution. These variations in EC can affect the availability of nutrients, including nitrogen, and the oxygen levels in the root zone, thereby impacting wasabi growth.",
+   "10": "The effect of nutrient concentration on rhizome enlargement can be inferred from the electrical conductivity (EC) values associated with different nutrient solutions. Higher EC values correspond to higher nutrient concentrations. For example, a 100% Enshi nutrient solution has an EC of 2.4, while a 150% Enshi nutrient solution has an EC of 3.7. These higher nutrient concentrations are likely to promote rhizome enlargement compared to lower concentrations, as they provide more nutrients necessary for growth. Conversely, lower EC values, such as 0.6 for a 25% Enshi nutrient solution, indicate lower nutrient concentrations, which may result in less rhizome enlargement.",
+   "11": "The provided edges do not directly address the effect of hydroponic versus natural cultivation on wasabi water temperature. However, they do provide some context about environmental conditions and cultivation periods in different settings. To understand the impact on water temperature specifically, additional data or studies comparing hydroponic and natural cultivation methods would be necessary.",
+   "12": "High temperatures can damage wasabi growth because wasabi plants generally thrive in cooler conditions. The maximum summer temperature reaching up to 35°C can be detrimental, as wasabi prefers average daily temperatures between 12-15°C from November to April. High temperatures can stress the plants, potentially leading to reduced growth and quality.",
+   "13": "The provided knowledge graph edges do not contain information about the AITC yield difference between soil- and water-grown wasabi.",
+   "14": "The variation in reported pH values for wasabi across studies could be attributed to differences in experimental conditions, such as the concentration of nutrients and solutions used. For instance, the concentration of elements like boron (B) and sulfur (S) in solutions can vary significantly depending on the specific conditions or formulations used in each study, such as Hoagland solution or different water use efficiency (WUE) conditions. These variations in nutrient concentrations can influence the pH of the growing medium, leading to differing pH values reported in different studies.",
+   "15": "The provided edges do not contain information about the CO2 enrichment levels that benefit greenhouse wasabi. Additional data or sources would be required to determine the optimal CO2 levels for wasabi cultivation in a greenhouse setting.",
+   "16": "The provided knowledge graph edges do not contain specific information about the effects of Vapor Pressure Deficit (VPD) on wasabi in greenhouse conditions. However, VPD is a critical factor in greenhouse environments as it influences plant transpiration and water uptake. Generally, maintaining an optimal VPD is crucial for plant health, as too high or too low VPD can lead to stress, affecting growth and yield. For wasabi, which is sensitive to environmental conditions, managing VPD within an optimal range would be important to ensure healthy growth in greenhouse settings.",
+   "17": "The provided data does not contain specific information about the altitude and climate conditions that suit wasabi glucosinolate accumulation. The data focuses on the concentration of copper (Cu) and boron (B) in various solutions, which are not directly related to wasabi glucosinolate accumulation. Additional information would be needed to answer the question about altitude and climate conditions for wasabi.",
+   "18": "The interaction between dissolved oxygen and water temperature for wasabi is not directly addressed in the provided edges. However, in general, dissolved oxygen levels in water are inversely related to temperature: as water temperature increases, the solubility of oxygen decreases, leading to lower dissolved oxygen levels. For wasabi, which typically grows in cooler water conditions, maintaining adequate dissolved oxygen levels is important for healthy growth. Cooler water temperatures would help maintain higher levels of dissolved oxygen, which is beneficial for wasabi cultivation.",
+   "19": "Key parameters for indoor wasabi production under artificial light include:\n\n1. **Luminous Intensity**: Adequate luminous intensity for axillary buds development is 30,000 lux.\n2. **Light Period**: The light period can be set at 8, 12, or 16 hours per day, depending on the specific experimental conditions.\n3. **Potassium Concentration**: Typical concentration of potassium (K) is 3.5 mM, with variations in specific solutions like Hoagland solution (3 mM).\n4. **Overhead Lighting**: Overhead lighting can be set to provide 750 µmol·m²·s⁻¹ as supplemental morning light from 8:00 to 11:00 AM."
+  },
+  "B3": {
+   "0": "The optimal water temperature for wasabi hydroponic cultivation is not directly provided in the given edges. However, wasabi typically thrives in cool, consistent water temperatures, often around 12-15°C (54-59°F) in natural conditions. For hydroponic systems, maintaining a similar temperature range is generally recommended to mimic natural growing conditions and ensure optimal growth.",
+   "1": "To determine the EC (Electrical Conductivity) level that maximizes wasabi rhizome growth, we need to consider the provided information about solution concentrations and conditions that affect plant growth.\n\nThe relevant edges related to solution concentration are:\n- B --solution concentration--> 0.15 (cond: 3 g/L WUE)\n- B --solution concentration--> 0.3 (cond: 6 g/L WUE)\n- B --solution concentration--> 0.4 (cond: 3 g/L WUE USU)\n- B --solution concentration--> 0.9 (cond: 6 g/L WUE USU)\n\nThese edges suggest different solution concentrations under varying conditions of Water Use Efficiency (WUE). The WUE conditions (3 g/L and 6 g/L) and the USU (possibly a specific experimental setup or location) indicate different scenarios for optimizing growth.\n\nTo maximize wasabi rhizome growth, we should consider the concentration that provides the best balance between nutrient availability and water use efficiency. Typically, higher WUE (6 g/L) might indicate more efficient water usage, which is crucial for maximizing growth in hydroponic systems.\n\nThe solution concentration of 0.9 under the condition of 6 g/L WUE USU suggests a higher concentration that might be optimal for maximizing growth, as it is associated with a higher WUE, potentially leading to better nutrient uptake and growth efficiency.\n\nTherefore, the EC level that maximizes wasabi rhizome growth is likely associated with the solution concentration of 0.9 under the condition of 6 g/L WUE USU.",
+   "2": "The provided edges do not directly specify the recommended pH range for the wasabi nutrient solution. However, based on typical hydroponic practices and the fact that wasabi is a plant that prefers slightly acidic conditions, the recommended pH range for wasabi nutrient solutions is generally around 6.0 to 7.0. This range supports optimal nutrient uptake for most hydroponically grown plants, including wasabi.",
+   "3": "The provided edges do not directly address the effect of low dissolved oxygen (DO) on wasabi rhizome yield. However, we can infer some potential impacts based on general knowledge and the context of the edges related to environmental conditions and nutrient solutions.\n\n1. **Dissolved Oxygen (DO) and Plant Growth**: Dissolved oxygen is crucial for root respiration and nutrient uptake in plants. Low DO levels can lead to root stress, reduced nutrient absorption, and ultimately lower plant growth and yield.\n\n2. **Electrical Conductivity (EC) and Nutrient Solutions**: The edges provide information on the electrical conductivity (EC) of various nutrient solutions, which is an indicator of nutrient concentration. While EC itself is not directly related to DO, it is important for maintaining optimal nutrient levels for plant growth.\n\n3. **General Impact on Wasabi**: Wasabi is a plant that typically grows in cool, flowing water environments, which are naturally high in dissolved oxygen. Low DO levels could stress the wasabi plants, potentially reducing rhizome yield due to impaired root function and nutrient uptake.\n\nIn conclusion, while the edges do not explicitly mention the effect of low DO on wasabi rhizome yield, it can be inferred that low DO would likely have a negative impact by causing root stress and reducing nutrient uptake, leading to lower yields.",
+   "4": "The edges provided do not directly mention the dissolved oxygen (DO) concentration required for healthy wasabi root growth. However, they do provide information about dissolved oxygen concentrations in other contexts, such as for weeping fig cuttings and unstirred propagation units.\n\nFor weeping fig cuttings, the dissolved oxygen concentrations mentioned are 0, 2.5, 5.0, and 8.0, with no specific indication of which is optimal for wasabi. Additionally, a concentration of 7.5 is mentioned for unstirred propagation units.\n\nWithout specific information on wasabi, it is reasonable to infer that a moderate to high dissolved oxygen concentration, similar to the higher values mentioned (e.g., 7.5 or 8.0), might be beneficial for healthy root growth, as higher oxygen levels generally support better root development in many plants. However, for precise requirements, specific studies or guidelines on wasabi would be needed.",
+   "5": "To understand how PPFD (Photosynthetic Photon Flux Density) influences wasabi growth under artificial light, we need to consider the different PPFD levels set at the planting panel surface and their conversions at a height of 30 cm above the panel. \n\n1. **PPFD Levels at Planting Panel Surface:**\n   - 60 µmol m-2 s-1\n   - 110 µmol m-2 s-1\n   - 150 µmol m-2 s-1\n   - 290 µmol m-2 s-1\n\n2. **Converted PPFD Levels at 30 cm Above Planting Panel:**\n   - 72 µmol m-2 s-1 (converted from 60 µmol m-2 s-1)\n   - 132 µmol m-2 s-1 (converted from 110 µmol m-2 s-1)\n   - 180 µmol m-2 s-1 (converted from 150 µmol m-2 s-1)\n\nThese PPFD levels indicate the intensity of light that the wasabi plants receive, which is crucial for photosynthesis and growth. Higher PPFD levels generally provide more light energy, which can enhance photosynthesis and potentially improve growth rates, assuming other conditions such as temperature and nutrients are optimal.\n\n3. **Light Periods:**\n   - 8 hours per day\n   - 12 hours per day\n   - 16 hours per day\n\nThe duration of light exposure also plays a significant role in plant growth. Longer light periods can increase the total amount of light energy received by the plants, which can further enhance photosynthesis and growth, provided the PPFD is within a suitable range for wasabi.\n\nIn conclusion, both the intensity (PPFD) and duration (light period) of artificial light are critical factors influencing wasabi growth. Optimal growth would likely require a balance of sufficient PPFD and an appropriate light period to maximize photosynthesis without causing light stress.",
+   "6": "The optimal photoperiod for wasabi under artificial lighting, based on the given edges, is 12 hours of light and 12 hours of dark, as indicated by the photoperiod set to 12/12 in indoor cultivation (S18) and the 2021 experiment (S09).",
+   "7": "The provided edges do not directly address the relationship between shading rate and wasabi AITC (allyl isothiocyanate) content. The edges primarily discuss electrical conductivity (EC) levels under various conditions and nutrient solutions. To understand how shading rate affects wasabi AITC content, additional information or edges specifically linking shading rate to AITC content would be necessary.",
+   "8": "The suitable air temperature range for wasabi seedlings can be inferred from the average daily temperature and nocturnal air temperature data provided:\n\n- The average daily temperature from November to April is 12-15°C.\n- The nocturnal air temperature minimums range from 5°C to 8°C during different periods.\n\nTherefore, a suitable air temperature range for wasabi seedlings would likely be around 12-15°C during the day, with nocturnal temperatures not dropping below 5°C.",
+   "9": "The substrate type can affect the dissolved oxygen (DO) and root nitrogen levels in wasabi by influencing the electrical conductivity (EC) of the nutrient solution used. Different substrates can alter the nutrient solution's EC, which in turn affects the availability of oxygen and nitrogen to the plant roots.\n\n- Higher EC levels, as seen with higher concentrations of Enshi nutrient solution (e.g., 2.4 for 100% and 3.7 for 150%), can indicate a higher concentration of nutrients, which might affect the oxygen availability due to increased ionic strength and potential for nutrient imbalances.\n- Lower EC levels, such as 0.1 in optimal nutrient conditions, suggest a more balanced nutrient solution that could support better oxygen availability and nitrogen uptake by the roots.\n\nTherefore, the choice of substrate and its impact on the nutrient solution's EC can significantly influence the DO and root nitrogen levels in wasabi cultivation.",
+   "10": "To determine the effect of nutrient concentration on rhizome enlargement, we need to consider the relationship between electrical conductivity (EC) and nutrient concentration, as EC is a measure of the nutrient concentration in a solution.\n\nFrom the provided edges:\n- EC values increase with higher concentrations of the Enshi nutrient solution: \n  - 0.6 for 25% Enshi nutrient solution\n  - 1.3 for 50% Enshi nutrient solution\n  - 2.4 for 100% Enshi nutrient solution\n  - 3.7 for 150% Enshi nutrient solution\n\nThis indicates that as the nutrient concentration increases, the EC value also increases.\n\nIn general, higher nutrient concentrations (higher EC values) can lead to enhanced growth and enlargement of plant structures such as rhizomes, up to an optimal point beyond which further increases might lead to nutrient toxicity or osmotic stress. Therefore, increasing nutrient concentration is likely to promote rhizome enlargement, provided it is within the optimal range for the specific plant species and environmental conditions.",
+   "11": "The provided edges do not directly address the effect of hydroponic vs natural cultivation on wasabi water temperature. However, we can infer some related information:\n\n1. **Cultivation Periods**: The edges mention various cultivation periods for different experiments, which could imply different environmental conditions, including water temperature, but they do not specify the temperature itself.\n\n2. **Electrical Conductivity (EC)**: The EC values for nutrient solutions (0.6 for 25% Enshi and 1.3 for 50% Enshi) suggest different nutrient concentrations, which might indirectly affect water temperature due to the heat generated by nutrient absorption and metabolic processes in hydroponic systems.\n\n3. **Diurnal Range of Air Temperature**: The average diurnal range of air temperature in different regions (Nagano, Yamanashi, Shizuoka) could influence water temperature in natural cultivation, as water bodies tend to equilibrate with ambient air temperatures over time.\n\nIn summary, while the edges provide information on cultivation periods and nutrient solution concentrations, they do not explicitly state how hydroponic vs natural cultivation affects wasabi water temperature. However, differences in nutrient solution concentration and regional air temperature ranges could indirectly influence water temperature in these cultivation methods.",
+   "12": "High temperatures can damage wasabi growth primarily because wasabi is a plant that thrives in cooler environments. The edges provided indicate that the average daily temperature in summer can reach up to 25°C, with maximum temperatures reaching 35°C. Wasabi typically grows best in cooler temperatures, such as those found from November to April, where the average daily temperature ranges from 12-15°C. High temperatures can lead to heat stress, which can inhibit growth, reduce quality, and potentially lead to plant death. Additionally, wasabi requires a stable and cool environment to maintain its growth and flavor profile, which is compromised at higher temperatures.",
+   "13": "The provided edges do not contain any information directly related to AITC (allyl isothiocyanate) yield differences between soil- and water-grown wasabi. The edges mainly describe aspects of water content, soil moisture, and iron concentration, but do not address AITC yield or compare soil and water growth methods for wasabi. Therefore, based on the given information, no AITC yield difference can be determined.",
+   "14": "The reported pH values for wasabi may vary across studies due to differences in experimental conditions such as the concentration of nutrients and solutions used. For example, the concentration of elements like boron (B) and sulfur (S) can vary depending on the specific solution or growth medium used, such as Hoagland solution or different concentrations of WUE (Water Use Efficiency) solutions. These variations in nutrient concentrations can affect the pH of the growth medium, leading to different reported pH values in different studies.",
+   "15": "The provided edges do not directly mention CO2 enrichment levels for greenhouse wasabi. However, they provide information about various concentrations and conditions related to other elements and solutions. To determine the CO2 enrichment level that benefits greenhouse wasabi, additional specific information or research data on CO2 levels would be required, which is not present in the given edges.",
+   "16": "To understand how VPD (Vapor Pressure Deficit) affects wasabi in greenhouse conditions, we need to consider the relationship between VPD and plant growth, particularly in controlled environments like greenhouses.\n\n1. **VPD and Plant Growth**: VPD is a measure of the difference between the amount of moisture in the air and how much moisture the air can hold when it is saturated. It influences plant transpiration and water uptake. A higher VPD can lead to increased transpiration rates, which might stress plants if water uptake is insufficient.\n\n2. **VPD in Greenhouse Conditions**: In greenhouse conditions, controlling VPD is crucial for optimal plant growth. The edge \"VPD leaf --approached--> 2.0 kPa (cond: at 95% FC)\" suggests that in the context of wasabi, a VPD approaching 2.0 kPa is observed at 95% field capacity (FC). This indicates a relatively high VPD, which could lead to increased transpiration.\n\n3. **Impact on Wasabi**: Wasabi, being a plant that typically grows in cool, moist environments, might be sensitive to high VPD levels. In a greenhouse, if the VPD is too high, it could lead to excessive water loss through transpiration, potentially stressing the plant if water supply is not adequately managed.\n\n4. **Nutrient Solution and EC**: The edges related to EC (Electrical Conductivity) and nutrient solutions suggest that maintaining appropriate nutrient levels is also important. The EC values indicate different concentrations of nutrient solutions, which are crucial for plant health. A balanced nutrient solution, indicated by appropriate EC levels, would support wasabi growth under varying VPD conditions.\n\nIn summary, in greenhouse conditions, managing VPD is critical for wasabi cultivation. A VPD approaching 2.0 kPa could increase transpiration, necessitating careful water and nutrient management to prevent plant stress and ensure healthy growth.",
+   "17": "The information provided does not directly address the altitude and climate conditions suitable for wasabi glucosinolate accumulation. The edges focus on the concentration of copper (Cu) and boron (B) in various solutions, which are not directly related to the environmental conditions like altitude and climate that affect wasabi glucosinolate accumulation. Additional information about wasabi cultivation and its environmental preferences would be needed to answer this question.",
+   "18": "The interaction between dissolved oxygen and water temperature for wasabi is not directly provided in the given edges. However, we can infer some general principles based on the information available and known scientific principles.\n\n1. **Dissolved Oxygen and Temperature Relationship**: Generally, the solubility of oxygen in water decreases as the temperature increases. This means that in warmer water, there is typically less dissolved oxygen available.\n\n2. **Wasabi's Temperature Preferences**: From the edges, we know that the average daily temperature for wasabi in summer is 25°C, and from November to April, it is 12-15°C. Wasabi typically grows in cooler water conditions, which would naturally have higher levels of dissolved oxygen compared to warmer water.\n\n3. **Implications for Wasabi Cultivation**: For optimal growth, wasabi requires a consistent supply of dissolved oxygen, which is more readily available in cooler water. Therefore, maintaining lower water temperatures can help ensure adequate dissolved oxygen levels, which is crucial for wasabi's health and growth.\n\nIn summary, for wasabi, cooler water temperatures are beneficial as they help maintain higher levels of dissolved oxygen, which is essential for the plant's growth.",
+   "19": "The key parameters for indoor wasabi production under artificial light include:\n\n1. **Luminous Intensity**: Adequate luminous intensity for axillary buds development is 30,000.\n\n2. **Potassium (K) Concentration**: \n   - Typical concentration is 3.5 mM.\n   - In Hoagland solution, the concentration is 3 mM.\n\n3. **Light Period**: \n   - Can be set at 8, 12, or 16 hours per day, depending on specific experimental conditions with a photosynthetic photon flux (PPF) of 100 µmol m-2 s-1.\n\n4. **Overhead Lighting**: \n   - Set to provide 750 mmol·m²·s⁻¹ as supplemental morning light from 8:00 to 11:00 AM.\n\nThese parameters are crucial for optimizing the growth conditions of wasabi under controlled indoor environments."
+  },
+  "B4": {
+   "0": "The knowledge graph does not provide direct information about the optimal water temperature for wasabi hydroponic cultivation. However, based on general principles of hydroponic cultivation and wasabi's natural habitat, we can infer some guidelines.\n\nWasabi naturally grows in cool, mountain stream environments, suggesting that cooler water temperatures are likely optimal. In hydroponic systems, maintaining water temperatures similar to those found in wasabi's natural habitat can help mimic these conditions.\n\n**Practical Recommendation:**\nFor hydroponic cultivation of wasabi, aim to maintain water temperatures between 10°C to 15°C (50°F to 59°F). This range is typical of cool mountain streams and should support healthy wasabi growth. Regularly monitor and adjust the water temperature to stay within this range for optimal plant health and development.",
+   "1": "The knowledge graph does not provide a direct link between electrical conductivity (EC) levels and wasabi rhizome growth. However, we can infer some related information from the available data:\n\n1. **Boron (B) Concentration**: The concentration of boron in different conditions is provided, which can influence plant growth. For instance, boron concentrations in Hoagland solution are 23 µM, while other conditions show varying concentrations (0.15 to 0.9 depending on water use efficiency conditions). Boron is an essential micronutrient for plant growth, including wasabi.\n\n2. **Relative Humidity (RH)**: The RH levels are specified for different conditions, such as 60% to 100% in a greenhouse and 60% to 70% in a growth chamber. While RH is not directly related to EC, it is an important factor in plant growth environments.\n\n3. **Copper Levels**: Copper levels at 25 in hydroponic culture are noted to reduce root rot, which is crucial for healthy rhizome development.\n\nGiven the lack of direct information on EC levels for wasabi, a practical recommendation would be to maintain a balanced nutrient solution similar to Hoagland's, which is a well-known standard for hydroponic cultures. This includes maintaining boron at around 23 µM and ensuring other micronutrients are within optimal ranges. Additionally, maintaining appropriate RH levels and monitoring copper levels to prevent root rot can support healthy rhizome growth.\n\nFor specific EC levels, growers should start with standard hydroponic EC ranges (typically 1.5 to 2.5 mS/cm) and adjust based on plant response, ensuring that nutrient concentrations, especially boron and copper, are within the optimal range for wasabi. Regular monitoring and adjustments based on plant health and growth observations are crucial.",
+   "2": "The knowledge graph provided does not include any direct information about the recommended pH range for wasabi nutrient solutions. However, I can offer a practical recommendation based on general hydroponic practices for wasabi cultivation.\n\nWasabi typically prefers a slightly acidic to neutral pH range. For hydroponic systems, a pH range of 6.0 to 6.5 is often recommended for optimal nutrient uptake and plant health. This range helps ensure that essential nutrients remain available to the plants and prevents nutrient lockout.\n\nFor growers, it is important to regularly monitor and adjust the pH of the nutrient solution to maintain it within this range. Using a reliable pH meter and adjusting with pH up or pH down solutions as needed will help achieve this balance.\n\nIf you have access to specific guidelines or research on wasabi cultivation, it would be beneficial to cross-reference this general advice with those resources.",
+   "3": "The provided knowledge graph does not contain any direct information about the effect of low dissolved oxygen (DO) on wasabi rhizome yield. However, I can provide some general insights based on typical plant physiology and hydroponic practices:\n\n1. **Dissolved Oxygen (DO) Importance**: In hydroponic systems, dissolved oxygen is crucial for root respiration and nutrient uptake. Low DO levels can lead to root hypoxia, reducing the plant's ability to absorb nutrients and water efficiently.\n\n2. **Potential Impact on Wasabi**: Wasabi, like many plants, would likely suffer from reduced growth and yield if DO levels are insufficient. This is because the roots would not function optimally, potentially leading to poor rhizome development.\n\n3. **Practical Recommendation**: To ensure optimal wasabi rhizome yield, maintain adequate dissolved oxygen levels in the nutrient solution. This can be achieved by using aeration techniques such as air stones or oxygenating pumps to keep the DO levels high, especially in hydroponic systems.\n\nWhile the knowledge graph does not directly address the question, maintaining high dissolved oxygen levels is a general best practice for healthy plant growth in hydroponic systems.",
+   "4": "The knowledge graph does not provide specific information about the dissolved oxygen (DO) concentration required for healthy wasabi root growth. However, it does provide data on dissolved oxygen concentrations in the context of weeping fig cuttings, which range from 0 to 8.0 mg/L. \n\nFor general plant health, especially in hydroponic systems or aquatic environments, a dissolved oxygen concentration of around 5.0 to 8.0 mg/L is often considered beneficial for root growth. This range ensures that roots receive adequate oxygen, which is crucial for respiration and nutrient uptake.\n\n**Practical Recommendation:**\nFor healthy wasabi root growth, aim to maintain a dissolved oxygen concentration in the range of 5.0 to 8.0 mg/L in the root zone. This range is commonly beneficial for plant roots and should support healthy growth conditions. Regularly monitor and adjust the DO levels in your growing system to ensure they remain within this range.",
+   "5": "To understand how PPFD (Photosynthetic Photon Flux Density) influences wasabi growth under artificial light, we need to consider the available data on PPF (Photosynthetic Photon Flux) settings and conversions, as well as light periods.\n\n1. **PPF Settings and Conversions**:\n   - PPF is set at various levels: 60, 110, 150, and 290 µmol m-2 s-1 at the planting panel surface.\n   - These PPF values are converted to 72, 132, and 180 µmol m-2 s-1 when measured 30 cm above the planting panel.\n\n2. **Light Periods**:\n   - Light periods are set at 8, 12, and 16 hours per day under a PPF of 100 µmol m-2 s-1.\n\n3. **Supplemental Lighting**:\n   - Overhead lighting provides 750 mmol·m²·s⁻¹ as supplemental morning light from 8:00 to 11:00 AM.\n\n**Causal Chain**:\n- The PPF settings directly influence the amount of light energy available for photosynthesis.\n- Higher PPF values (e.g., 290 µmol m-2 s-1) typically provide more energy, potentially enhancing growth rates and biomass accumulation.\n- The conversion of PPF values to measurements taken 30 cm above the planting panel indicates how light intensity diminishes with distance, which is crucial for setting up artificial lighting systems.\n- Longer light periods (e.g., 16 hours) under a consistent PPF can increase the total daily light integral (DLI), promoting more robust growth compared to shorter light periods.\n\n**Practical Recommendation**:\nFor optimal wasabi growth under artificial light, consider setting a PPF of around 150 to 290 µmol m-2 s-1 at the planting panel surface, ensuring that the light intensity is sufficient even 30 cm above the plants. Pair this with a light period of 12 to 16 hours per day to maximize photosynthesis and growth. Additionally, consider using supplemental lighting in the morning to boost early-day photosynthetic activity. Adjustments may be necessary based on specific growth conditions and plant responses.",
+   "6": "To determine the optimal photoperiod for wasabi under artificial lighting, we can analyze the provided knowledge graph edges:\n\n1. **Photoperiod in Growth Chamber**: \n   - One source indicates a photoperiod of 12 hours in a growth chamber (<S01>).\n   - Another source suggests a photoperiod of 14 hours in a growth chamber (<S04>).\n\n2. **Photoperiod in Experiments and Indoor Cultivation**:\n   - A 12/12 light/dark cycle was used in a 2021 experiment (<S09>).\n   - A 12/12 light/dark cycle is also set for indoor cultivation (<S18>).\n\nGiven the information, there is a slight discrepancy between the recommended photoperiods in growth chambers (12 hours vs. 14 hours). However, the consistent use of a 12/12 light/dark cycle in both a specific experiment and indoor cultivation suggests that a 12-hour photoperiod is commonly used and likely effective for wasabi under artificial lighting.\n\n**Practical Recommendation**: For growing wasabi under artificial lighting, use a 12-hour photoperiod (12 hours of light followed by 12 hours of darkness). This setup has been used successfully in both experimental and indoor cultivation settings, making it a reliable choice for growers.",
+   "7": "The knowledge graph does not provide a direct link between shading rate and wasabi AITC content. However, it does provide information on electrical conductivity (EC) levels under various nutrient solution conditions, which can be related to plant growth and potentially to AITC content.\n\nTo explore the potential impact of shading rate on wasabi AITC content, consider the following causal chain:\n\n1. **Shading Rate**: Shading can affect the photosynthetic activity of plants, which in turn can influence the uptake of nutrients and water.\n\n2. **Nutrient Uptake and EC**: Changes in shading can alter the plant's water use efficiency (WUE) and nutrient uptake, which might be reflected in the EC of the nutrient solution. For example, different nutrient solutions have different EC levels, which are associated with varying nutrient concentrations.\n\n3. **AITC Content**: While the graph does not explicitly connect EC or shading to AITC content, it is known that nutrient availability and plant stress (which can be influenced by shading) can affect secondary metabolite production, such as AITC in wasabi.\n\n**Practical Recommendation**: \nTo potentially optimize AITC content in wasabi, consider experimenting with shading rates while monitoring the EC of the nutrient solution. Adjust the shading to ensure optimal photosynthesis without causing excessive stress, and maintain an appropriate EC level that supports healthy plant growth. Regularly test AITC levels to find the best balance for your specific growing conditions.",
+   "8": "To determine the suitable air temperature range for wasabi seedlings, we can consider the average daily and nocturnal temperatures provided:\n\n1. **Average Daily Temperature in Summer**: 25°C\n2. **Average Daily Temperature from November to April**: 12-15°C\n3. **Nocturnal Minimum Temperature from December to April**: 8°C\n4. **Nocturnal Minimum Temperature from November to January**: 5°C\n\nFrom this data, we can infer that wasabi seedlings are likely to thrive in cooler temperatures, particularly between 12-15°C during the day from November to April, and they can tolerate nocturnal temperatures as low as 5-8°C. \n\n**Practical Recommendation**: For optimal growth of wasabi seedlings, maintain air temperatures between 12-15°C during the day and ensure that nocturnal temperatures do not drop below 5°C. This range should support healthy seedling development, particularly in regions with similar climatic conditions to those described.",
+   "9": "The provided knowledge graph edges do not directly address the relationship between substrate type and dissolved oxygen (DO) or root nitrogen in wasabi. However, they provide information about electrical conductivity (EC) in various nutrient solutions, which can indirectly relate to plant health and nutrient uptake.\n\nTo address the question, we can infer the following:\n\n1. **Substrate Type and DO**: Different substrates can affect the oxygen availability to plant roots. For instance, substrates with higher porosity generally allow better oxygen diffusion, which can increase DO levels around the roots. This is crucial for wasabi, which prefers well-oxygenated environments.\n\n2. **Substrate Type and Root Nitrogen**: The substrate can influence nutrient retention and availability, including nitrogen. Substrates that retain nutrients well can provide a steady supply of nitrogen to the roots, which is essential for wasabi growth.\n\n3. **EC as an Indicator**: The EC values provided suggest different nutrient concentrations, which can affect nutrient availability, including nitrogen. For example, higher EC values generally indicate higher nutrient concentrations, which could lead to increased nitrogen availability to the roots.\n\n**Practical Recommendation**:\n- Choose a substrate with good porosity to enhance DO levels around the wasabi roots. This can help prevent root diseases and promote healthy growth.\n- Monitor and adjust the nutrient solution's EC to ensure optimal nitrogen availability. For wasabi, maintaining an EC that supports healthy plant growth without causing nutrient burn is crucial. Based on the provided data, an EC around 0.9 to 1.8 might be suitable, depending on the specific growth conditions and nutrient solution used.\n\nNote: Since the knowledge graph does not directly link substrate type to DO and root nitrogen in wasabi, these recommendations are based on general principles of plant growth and the indirect information provided.",
+   "10": "To determine the effect of nutrient concentration on rhizome enlargement, we can look at the relationship between electrical conductivity (EC) and nutrient solutions, as EC is a measure of the concentration of nutrients in a solution.\n\n1. **Nutrient Concentration and EC**: \n   - EC is a measure of the nutrient concentration in a solution. Higher EC values indicate higher nutrient concentrations. For example, an EC of 0.6 corresponds to a 25% Enshi nutrient solution, while an EC of 3.7 corresponds to a 150% Enshi nutrient solution <S01>.\n\n2. **Effect on Plant Growth**:\n   - Generally, higher nutrient concentrations (higher EC) can promote plant growth up to a certain point, beyond which it may lead to nutrient toxicity or osmotic stress. This is because plants require a balanced supply of nutrients for optimal growth, and excessive concentrations can be detrimental.\n\n3. **Practical Recommendation**:\n   - For rhizome enlargement, it is advisable to maintain an EC that provides sufficient nutrients without causing stress. Based on the provided data, an EC around 1.3 (50% Enshi nutrient solution) might be a good starting point, as it offers a moderate nutrient concentration that is likely to support growth without reaching levels that could cause stress.\n\nIn summary, to promote rhizome enlargement, use a nutrient solution with an EC around 1.3, adjusting as necessary based on plant response and environmental conditions. Monitor plant health and adjust the nutrient concentration if signs of deficiency or toxicity appear.",
+   "11": "The provided knowledge graph edges do not directly address the effect of hydroponic versus natural cultivation on wasabi water temperature. However, I can offer some general insights based on typical practices and considerations in hydroponic and natural cultivation systems.\n\n1. **Hydroponic Cultivation**: In hydroponic systems, water temperature can be more easily controlled and maintained within an optimal range for wasabi growth. This is because hydroponic systems often use recirculating water systems where temperature can be regulated using heaters or chillers. This control helps maintain consistent growth conditions, which is crucial for wasabi, a plant sensitive to temperature fluctuations.\n\n2. **Natural Cultivation**: In natural settings, such as traditional wasabi fields (often in mountainous regions with flowing streams), water temperature is influenced by environmental factors such as air temperature and the natural diurnal range. The provided data shows average diurnal air temperature ranges in different regions (Nagano, Yamanashi, Shizuoka), which can indirectly affect water temperature in natural cultivation settings.\n\n**Practical Recommendation**: For growers considering hydroponic wasabi cultivation, investing in a system that allows precise control of water temperature is beneficial. Aim to maintain water temperatures that mimic the natural cool stream conditions wasabi prefers, typically between 10-15°C (50-59°F). This can help optimize growth and yield. In natural cultivation, selecting a site with consistent cool water flow and minimal temperature fluctuation will be crucial for successful wasabi cultivation.",
+   "12": "High temperatures can damage wasabi growth primarily because wasabi is sensitive to heat and thrives in cooler conditions. The following causal chain explains how high temperatures can affect wasabi:\n\n1. **Optimal Temperature Range**: Wasabi typically grows best in cooler temperatures. The average daily temperature from November to April is 12-15°C, which aligns with wasabi's preferred growing conditions.\n\n2. **High Summer Temperatures**: During summer, the average daily temperature can reach 25°C, with maximum temperatures peaking at 35°C. These temperatures are significantly higher than the optimal range for wasabi growth.\n\n3. **Heat Stress**: Exposure to temperatures as high as 35°C can cause heat stress in wasabi plants. Heat stress can lead to reduced growth rates, wilting, and potentially damage the plant's physiological processes.\n\n4. **Diurnal Temperature Range**: The diurnal temperature range in regions like Nagano, Yamanashi, and Shizuoka varies, but high daytime temperatures can still pose a risk if they exceed wasabi's tolerance levels.\n\n**Practical Recommendation**: To mitigate the effects of high temperatures on wasabi growth, growers should consider implementing cooling strategies such as shade cloths or misting systems to reduce heat stress. Additionally, selecting planting sites with natural shade or cooler microclimates can help maintain more stable temperatures conducive to wasabi growth.",
+   "13": "The knowledge graph does not provide direct information about the AITC (allyl isothiocyanate) yield difference between soil- and water-grown wasabi. However, we can infer some relevant factors that might influence wasabi growth and potentially affect AITC yield:\n\n1. **Soil Moisture and Growth Conditions**:\n   - Wasabi thrives with soil moisture at 95% field capacity. This suggests that maintaining high soil moisture is crucial for optimal wasabi growth in soil conditions.\n\n2. **Water Content in Growing Media**:\n   - The volumetric water content is higher in vermiculite (84.1% maximum) compared to rockwool (52.6% maximum). At the end of the experiment, vermiculite still had a higher water content (76.4%) compared to rockwool (65.4%).\n\nGiven these observations, if wasabi is grown in a water-based system (such as hydroponics), it might benefit from more consistent and controlled moisture levels compared to soil, potentially affecting growth and AITC yield. However, without specific data on AITC yield differences, we can only hypothesize that maintaining optimal moisture levels is key.\n\n**Practical Recommendation**:\nFor growers interested in maximizing AITC yield in wasabi, focus on maintaining high and consistent moisture levels, whether growing in soil or using a hydroponic system. Consider using a medium like vermiculite in hydroponics for better water retention, or ensure soil-grown wasabi is kept near 95% field capacity for optimal growth conditions.",
+   "14": "The knowledge graph edges provided do not directly address the variation in reported pH values for wasabi across studies. However, I can infer a possible explanation based on general principles of plant cultivation and experimental conditions:\n\n1. **Nutrient Solution Variability**: The concentration of nutrients like Boron (B) and Sulfur (S) in solutions can vary significantly depending on the conditions and formulations used (e.g., Hoagland solution vs. other concentrations). This variability can affect the pH of the nutrient solution.\n\n2. **Experimental Conditions**: Different studies might use different concentrations of nutrients or different types of nutrient solutions (e.g., Hoagland solution vs. WUE solutions), which can lead to variations in pH. For example, the concentration of Boron in Hoagland solution is 23 µM, whereas it varies from 0.15 to 0.9 in different WUE conditions.\n\n3. **Environmental Factors**: Factors such as luminous intensity, which affects plant development, might also indirectly influence pH measurements if they affect plant uptake of nutrients and water, thereby altering the nutrient solution's pH over time.\n\nGiven these considerations, the variation in reported pH values for wasabi across studies could be attributed to differences in nutrient solution formulations and experimental conditions used in each study.\n\n**Practical Recommendation**: For consistent pH management in wasabi cultivation, growers should standardize the nutrient solution formulation and maintain consistent environmental conditions. Regular monitoring and adjustment of the nutrient solution's pH are also recommended to ensure optimal plant growth.",
+   "15": "The knowledge graph provided does not contain any direct information about CO2 enrichment levels for greenhouse wasabi. However, CO2 enrichment is a common practice in greenhouse cultivation to enhance plant growth and yield. Typically, CO2 levels in greenhouses are increased to about 800-1000 ppm (parts per million) to optimize photosynthesis and plant growth.\n\n**Practical Recommendation:**\nFor greenhouse wasabi, consider enriching the CO2 concentration to around 800-1000 ppm. This range is generally beneficial for many greenhouse crops, promoting better growth and yield. However, it is important to monitor the plants closely and adjust based on their specific responses, as wasabi might have unique requirements.",
+   "16": "To understand how Vapor Pressure Deficit (VPD) affects wasabi in greenhouse conditions, we need to consider the relationship between VPD and plant growth. VPD is a measure of the difference between the moisture in the air and how much moisture the air can hold when it is saturated. It is a critical factor in plant transpiration and water use efficiency.\n\n1. **VPD and Plant Transpiration**: Higher VPD values generally increase the rate of transpiration in plants. This means that plants will lose more water through their leaves, which can lead to increased water uptake from the roots.\n\n2. **VPD and Wasabi**: Wasabi is a plant that typically requires high humidity and stable conditions, as it is sensitive to environmental changes. In a greenhouse setting, maintaining an optimal VPD is crucial to ensure that wasabi does not experience excessive water loss, which could lead to stress or reduced growth.\n\n3. **VPD Value for Wasabi**: The knowledge graph indicates that VPD leaf approaches 2.0 kPa at 95% field capacity (FC) <S12>. This suggests that a VPD around 2.0 kPa is a reference point for wasabi under these conditions.\n\n**Practical Recommendation**: For growing wasabi in greenhouse conditions, aim to maintain a VPD close to 2.0 kPa. This will help ensure that the wasabi plants do not experience excessive transpiration, which could lead to water stress. Regularly monitor the greenhouse environment to adjust humidity and temperature as needed to maintain this VPD level. Additionally, ensure that the nutrient solution and irrigation practices are aligned with the plant's water use efficiency to support healthy growth.",
+   "17": "The provided knowledge graph edges do not contain direct information about the altitude and climate conditions that suit wasabi glucosinolate accumulation. The edges focus on the concentrations of copper (Cu) and boron (B) in various solutions, which are not directly related to the environmental conditions for wasabi growth.\n\nTo provide a practical recommendation for wasabi cultivation, growers should consider the following general guidelines based on typical wasabi growing conditions:\n\n1. **Altitude**: Wasabi typically grows well in mountainous regions with altitudes ranging from 300 to 1,500 meters. This range provides the cool temperatures and high humidity that wasabi prefers.\n\n2. **Climate**: Wasabi thrives in a temperate climate with cool temperatures. Ideal conditions include temperatures between 8°C and 20°C (46°F to 68°F) and high humidity. Wasabi requires a constant supply of fresh, clean water, often grown in shaded, stream-like environments to mimic its natural habitat.\n\nFor optimal glucosinolate accumulation, maintaining these environmental conditions is crucial. If you are considering growing wasabi, ensure that your site can provide these specific altitude and climate conditions.",
+   "18": "The interaction between dissolved oxygen and water temperature is crucial for the growth of wasabi, as it is for many aquatic plants. Generally, as water temperature increases, the solubility of oxygen decreases, meaning warmer water holds less dissolved oxygen. This can be critical for wasabi, which typically grows in cool, flowing water environments.\n\n1. **Water Temperature and Oxygen Solubility**: As water temperature rises, the capacity of water to hold dissolved oxygen decreases. This means that in warmer conditions, there is less oxygen available in the water for plant uptake.\n\n2. **Wasabi's Temperature Preference**: Wasabi prefers cooler temperatures, with average daily temperatures ranging from 12-15°C from November to April and up to 25°C in summer. These cooler temperatures are more conducive to higher dissolved oxygen levels, which is beneficial for wasabi growth.\n\n3. **Practical Recommendation**: To optimize wasabi growth, maintain water temperatures on the cooler side, ideally between 12-15°C, to ensure higher dissolved oxygen levels. This can be achieved by using shaded areas or controlled water flow systems to prevent water from warming excessively, especially during the summer months.\n\nBy managing water temperature effectively, growers can ensure adequate dissolved oxygen levels, promoting healthier wasabi plants.",
+   "19": "For successful indoor wasabi production under artificial light, several key parameters should be considered:\n\n1. **Light Intensity and Duration**: \n   - Adequate luminous intensity for axillary buds development is 30,000 lux. This is crucial for proper growth.\n   - The light period can be set at 8, 12, or 16 hours per day, depending on the specific growth stage and experimental conditions. A longer light period generally supports more photosynthesis but should be balanced with plant needs.\n\n2. **Potassium (K) Concentration**:\n   - Typical concentration for potassium is 3.5 mM, which is essential for plant growth and development.\n   - In a Hoagland solution, the concentration is slightly lower at 3 mM, which is a standard nutrient solution for hydroponic systems.\n\n3. **Supplemental Lighting**:\n   - Overhead lighting should provide 750 µmol·m²·s⁻¹, particularly as supplemental morning light from 8:00 to 11:00 AM. This can help optimize photosynthesis during critical growth periods.\n\n4. **Nutrient Concentration**:\n   - The net photosynthetic rate is highest at 20.1 when using vermiculite at 100% nutrient concentration, indicating the importance of maintaining adequate nutrient levels for optimal growth.\n\n**Practical Recommendation for Growers**:\n- Ensure your indoor setup provides at least 30,000 lux of light intensity and consider a light period of 12 to 16 hours for optimal growth.\n- Use a nutrient solution with a potassium concentration around 3.5 mM, adjusting slightly if using a Hoagland solution.\n- Incorporate supplemental lighting in the morning to enhance photosynthesis.\n- Monitor nutrient concentrations closely, aiming for full-strength solutions to maximize photosynthetic rates and plant health."
+  }
+ },
+ "existing_scores": [
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 0,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 0,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 1,
+   "FA": 5,
+   "CV": 5,
+   "AC": 5,
+   "mean": 5.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 1,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 2,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 2,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 3,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 3,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 4,
+   "FA": 1,
+   "CV": 2,
+   "AC": 1,
+   "mean": 1.3333333333333333
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 4,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 5,
+   "FA": 2,
+   "CV": 2,
+   "AC": 1,
+   "mean": 1.6666666666666667
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 5,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 6,
+   "FA": 3,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 6,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 7,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 7,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 8,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 8,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 9,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 9,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 10,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 10,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 11,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 11,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 12,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 12,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 13,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 13,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 14,
+   "FA": 4,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 14,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 15,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 15,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 16,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 16,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 17,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 17,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 18,
+   "FA": 3,
+   "CV": 4,
+   "AC": 2,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 18,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J1",
+   "query": 19,
+   "FA": 2,
+   "CV": 2,
+   "AC": 2,
+   "mean": 2.0
+  },
+  {
+   "baseline": "B1",
+   "judge": "J3",
+   "query": 19,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 0,
+   "FA": 4,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 0,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 1,
+   "FA": 3,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 1,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 2,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 2,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 3,
+   "FA": 3,
+   "CV": 2,
+   "AC": 1,
+   "mean": 2.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 3,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 4,
+   "FA": 3,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 4,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 5,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 5,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 6,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 6,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 7,
+   "FA": 3,
+   "CV": 2,
+   "AC": 1,
+   "mean": 2.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 7,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 8,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 8,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 9,
+   "FA": 2,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.3333333333333335
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 9,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 10,
+   "FA": 4,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 10,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 11,
+   "FA": 3,
+   "CV": 2,
+   "AC": 1,
+   "mean": 2.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 11,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 12,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 12,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 13,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 13,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 14,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 14,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 15,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 15,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 16,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 16,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 17,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 17,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 18,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 18,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J1",
+   "query": 19,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B2",
+   "judge": "J3",
+   "query": 19,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 0,
+   "FA": 4,
+   "CV": 5,
+   "AC": 5,
+   "mean": 4.666666666666667
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 0,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 1,
+   "FA": 2,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 1,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 2,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 2,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 3,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 3,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 4,
+   "FA": 2,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 4,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 5,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 5,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 6,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 6,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 7,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 7,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 8,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 8,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 9,
+   "FA": 2,
+   "CV": 3,
+   "AC": 2,
+   "mean": 2.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 9,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 10,
+   "FA": 4,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 10,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 11,
+   "FA": 2,
+   "CV": 2,
+   "AC": 1,
+   "mean": 1.6666666666666667
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 11,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 12,
+   "FA": 4,
+   "CV": 5,
+   "AC": 4,
+   "mean": 4.333333333333333
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 12,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 13,
+   "FA": 3,
+   "CV": 3,
+   "AC": 1,
+   "mean": 2.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 13,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 14,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 14,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 15,
+   "FA": 2,
+   "CV": 2,
+   "AC": 1,
+   "mean": 1.6666666666666667
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 15,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 16,
+   "FA": 3,
+   "CV": 4,
+   "AC": 3,
+   "mean": 3.3333333333333335
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 16,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 17,
+   "FA": 1,
+   "CV": 1,
+   "AC": 1,
+   "mean": 1.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 17,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 18,
+   "FA": 4,
+   "CV": 5,
+   "AC": 4,
+   "mean": 4.333333333333333
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 18,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B3",
+   "judge": "J1",
+   "query": 19,
+   "FA": 2,
+   "CV": 3,
+   "AC": 3,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B3",
+   "judge": "J3",
+   "query": 19,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 0,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 0,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 1,
+   "FA": 2,
+   "CV": 3,
+   "AC": 3,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 1,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 2,
+   "FA": 4,
+   "CV": 5,
+   "AC": 5,
+   "mean": 4.666666666666667
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 2,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 3,
+   "FA": 3,
+   "CV": 4,
+   "AC": 4,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 3,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 4,
+   "FA": 3,
+   "CV": 4,
+   "AC": 4,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 4,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 5,
+   "FA": 2,
+   "CV": 3,
+   "AC": 3,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 5,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 6,
+   "FA": 4,
+   "CV": 4,
+   "AC": 5,
+   "mean": 4.333333333333333
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 6,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 7,
+   "FA": 2,
+   "CV": 3,
+   "AC": 3,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 7,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 8,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 8,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 9,
+   "FA": 2,
+   "CV": 3,
+   "AC": 3,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 9,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 10,
+   "FA": 3,
+   "CV": 4,
+   "AC": 4,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 10,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 11,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 11,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 12,
+   "FA": 4,
+   "CV": 4,
+   "AC": 5,
+   "mean": 4.333333333333333
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 12,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 13,
+   "FA": 2,
+   "CV": 3,
+   "AC": 3,
+   "mean": 2.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 13,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 14,
+   "FA": 3,
+   "CV": 4,
+   "AC": 4,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 14,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 15,
+   "FA": 3,
+   "CV": 4,
+   "AC": 4,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 15,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 16,
+   "FA": 3,
+   "CV": 4,
+   "AC": 4,
+   "mean": 3.6666666666666665
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 16,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 17,
+   "FA": 4,
+   "CV": 4,
+   "AC": 4,
+   "mean": 4.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 17,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 18,
+   "FA": 4,
+   "CV": 5,
+   "AC": 4,
+   "mean": 4.333333333333333
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 18,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J1",
+   "query": 19,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  },
+  {
+   "baseline": "B4",
+   "judge": "J3",
+   "query": 19,
+   "FA": 3,
+   "CV": 3,
+   "AC": 3,
+   "mean": 3.0
+  }
+ ]
+}

@@ -1,0 +1,2542 @@
+{
+  "started_utc": "2026-09-04T06:19:49.174105+00:00",
+  "config": {
+    "RERUN_STEP1": false,
+    "MODEL_EXTRACT": "gpt-4o",
+    "MODEL_AUDIT": "gpt-4o",
+    "CHUNK_SIZE": 8000,
+    "OVERLAP": 400,
+    "FUZZY_TAU": 0.5,
+    "N_STABILITY": 5,
+    "SEED": 42,
+    "REPORT": "regenerated"
+  },
+  "inputs": {
+    "corpus": {
+      "name": "gpt4o_extracted_merged.json",
+      "bytes": 323727,
+      "sha256": "f1203bbb0d294dd8d6edc45c26b15c4a18d5d600fbba0c2e5c16df2f84a9a180"
+    },
+    "gold": {
+      "name": "triplets_gold_standard.json",
+      "bytes": 12709,
+      "sha256": "d149b944ce3df8ebd55ef8abd23d61c90315ab080a491f31f3e6a4152d441ac5"
+    },
+    "causal": {
+      "name": "causal_relations.json",
+      "bytes": 178553,
+      "sha256": "46e02b74b6ee097d83356b855263f9073623bdea301c5bde598ea0417dafa3df"
+    },
+    "pipeline": {
+      "name": "pipeline.py",
+      "bytes": 48927,
+      "sha256": "e9895228930df51cd3f6ced232f592f89c7dae52cb87da086a8f8313098a6b85"
+    },
+    "answers": {
+      "name": "judge_inputs.json",
+      "bytes": 80404,
+      "sha256": "f5c821d210a0ded49228539f364b8a7535e8a8e5798b75448c7e4fe0008c8416"
+    },
+    "judge": {
+      "name": "RQ2_judge_scores_canonical.json",
+      "bytes": 25718,
+      "sha256": "24cc3efb1d1e575805543fcc38760c631c21581a68c5bf8a830fb8289edb8613"
+    },
+    "berry": {
+      "name": "extractions.json",
+      "bytes": 404668,
+      "sha256": "05126b5f080d10fda861fdc403e1defc615147c96bf0c1fa3c2e2ccb41dbe61a"
+    }
+  },
+  "environment": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "openai": "2.26.0",
+      "anthropic": "0.116.0",
+      "groq": "1.1.2",
+      "scikit-learn": "1.5.1",
+      "scipy": "1.13.1",
+      "numpy": "1.26.4",
+      "matplotlib": "3.9.2",
+      "networkx": "3.3",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.8.0"
+    }
+  },
+  "corpus": {
+    "n_triplets": 770,
+    "n_documents": 19,
+    "n_gold": 60,
+    "rerun": false,
+    "metadata": {
+      "description": "Merged GPT-4o extracted triplets (19 papers, S01-S19)",
+      "total_triplets": 770,
+      "original_count": 405,
+      "additional_count": 365,
+      "confidence_level_schema": {
+        "Verified": "No conflict detected or FALSE_ALARM confirmed by LLM Auditor",
+        "Disputed": "T3 (conditional contradiction) confirmed as TRUE_CONFLICT",
+        "Conflicted": "T1 (range violation) or T2 (unit mismatch) confirmed as TRUE_CONFLICT"
+      }
+    },
+    "per_document": {
+      "S01": 37,
+      "S02": 33,
+      "S03": 75,
+      "S04": 22,
+      "S05": 80,
+      "S06": 69,
+      "S07": 48,
+      "S08": 32,
+      "S09": 77,
+      "S10": 1,
+      "S11": 20,
+      "S12": 23,
+      "S13": 44,
+      "S14": 77,
+      "S15": 33,
+      "S16": 41,
+      "S17": 32,
+      "S18": 17,
+      "S19": 9
+    }
+  },
+  "reference_tables": {
+    "thresholds": {
+      "water_temp": {
+        "min": 5,
+        "max": 20,
+        "unit": "°C"
+      },
+      "growth_medium_temp": {
+        "min": 5,
+        "max": 23,
+        "unit": "°C"
+      },
+      "air_temp": {
+        "min": 5,
+        "max": 30,
+        "unit": "°C"
+      },
+      "pH": {
+        "min": 5.5,
+        "max": 7.5,
+        "unit": ""
+      },
+      "DO": {
+        "min": 6,
+        "max": 14,
+        "unit": "mg/L"
+      },
+      "EC": {
+        "min": 0.05,
+        "max": 3.7,
+        "unit": "dS/m"
+      },
+      "PPF": {
+        "min": 50,
+        "max": 300,
+        "unit": "μmol/m²/s"
+      },
+      "PPFD": {
+        "min": 50,
+        "max": 900,
+        "unit": "μmol/m²/s"
+      },
+      "photoperiod": {
+        "min": 8,
+        "max": 16,
+        "unit": "hours"
+      },
+      "VPD": {
+        "min": 0.3,
+        "max": 2.5,
+        "unit": "kPa"
+      }
+    },
+    "n_unit_aliases": 12,
+    "n_conversions": 35,
+    "n_notation_variants": 20,
+    "incompatible_pairs": [
+      [
+        "%",
+        "μmol/m²/s"
+      ],
+      [
+        "% of saturation",
+        "mg/L"
+      ],
+      [
+        "months",
+        "hours"
+      ],
+      [
+        "Degree hour",
+        "°C"
+      ]
+    ],
+    "nonlinear_pairs": [
+      [
+        "lux",
+        "μmol/m²/s"
+      ]
+    ]
+  },
+  "rule_stage_readings": {
+    "as configured above": {
+      "flagged": 133,
+      "flags": 167,
+      "T1": 68,
+      "T2": 65,
+      "T3_candidate": 34
+    },
+    "§3.2.2 literal: non-identical values": {
+      "flagged": 133,
+      "flags": 170,
+      "T1": 71,
+      "T2": 65,
+      "T3_candidate": 34
+    },
+    "criterion (i) over any source (§3.2.2 example is S01 vs S01)": {
+      "flagged": 175,
+      "flags": 215,
+      "T1": 116,
+      "T2": 65,
+      "T3_candidate": 34
+    },
+    "Algorithm 1 literal: T3 only when T1/T2 did not fire": {
+      "flagged": 133,
+      "flags": 143,
+      "T1": 68,
+      "T2": 65,
+      "T3_candidate": 10
+    },
+    "first match only (pipeline.detect)": {
+      "flagged": 175,
+      "flags": 175,
+      "T1": 106,
+      "T2": 65,
+      "T3_candidate": 4
+    },
+    "T3 requires a condition-bearing peer (an addition)": {
+      "flagged": 133,
+      "flags": 167,
+      "T1": 68,
+      "T2": 65,
+      "T3_candidate": 34
+    }
+  },
+  "step2": {
+    "flagged": 133,
+    "total_flags": 167,
+    "multi_type": 33,
+    "by_type": {
+      "T2": 65,
+      "T1": 68,
+      "T3_candidate": 34
+    },
+    "t1_by_criterion": {
+      "range_violation": 50,
+      "cross_source_disagreement": 18
+    }
+  },
+  "auditor": {
+    "class": "run_full_experiment.GPT4oContextAuditor",
+    "model": "gpt-4o (hardcoded in the class)",
+    "t3_gate": "deterministic: peers from a single paper -> undefined"
+  },
+  "step3": {
+    "n_usable_audits": 167,
+    "n_ignored_legacy_keys": 0,
+    "verdicts": {
+      "FALSE_ALARM": 116,
+      "TRUE_CONFLICT": 44,
+      "None": 7
+    },
+    "undecided_flags": [
+      "EXT-0388|T3_candidate",
+      "EXT-0389|T3_candidate",
+      "EXT-0496|T3_candidate",
+      "EXT-0654|T3_candidate",
+      "EXT-0655|T3_candidate",
+      "EXT-0659|T3_candidate",
+      "EXT-0663|T3_candidate"
+    ]
+  },
+  "confidence": {
+    "distribution": {
+      "Verified": 734,
+      "Conflicted": 36
+    },
+    "confirmed_by_type": {
+      "T1": 31,
+      "T3_candidate": 1,
+      "T2": 12
+    },
+    "confirmed_t1_by_criterion": {
+      "range_violation": 24,
+      "cross_source_disagreement": 7
+    },
+    "auditor_type_overrides": 3,
+    "auditor_relabel_examples": [
+      {
+        "id": "EXT-0449",
+        "detector": "T2",
+        "auditor": "T1"
+      },
+      {
+        "id": "EXT-0506",
+        "detector": "T1",
+        "auditor": "T2"
+      },
+      {
+        "id": "EXT-0763",
+        "detector": "T1",
+        "auditor": "T2"
+      }
+    ]
+  },
+  "detector_sensitivity": {
+    "as specified (all three)": {
+      "flags": 167,
+      "Verified": 734,
+      "Conflicted": 36,
+      "Disputed": 0,
+      "audit_coverage": 1.0
+    },
+    "without multi-label (first match only)": {
+      "flags": 175,
+      "Verified": 734,
+      "Conflicted": 36,
+      "Disputed": 0,
+      "audit_coverage": 0.726
+    },
+    "without cross-source restriction on T1": {
+      "flags": 215,
+      "Verified": 734,
+      "Conflicted": 36,
+      "Disputed": 0,
+      "audit_coverage": 0.777
+    },
+    "without the T3 peer requirement": {
+      "flags": 167,
+      "Verified": 734,
+      "Conflicted": 36,
+      "Disputed": 0,
+      "audit_coverage": 1.0
+    }
+  },
+  "stability": {
+    "n_runs": 5,
+    "runs": [
+      {
+        "Verified": 735,
+        "Conflicted": 35
+      },
+      {
+        "Verified": 730,
+        "Conflicted": 39,
+        "Disputed": 1
+      },
+      {
+        "Verified": 732,
+        "Conflicted": 38
+      },
+      {
+        "Verified": 731,
+        "Conflicted": 38,
+        "Disputed": 1
+      },
+      {
+        "Verified": 731,
+        "Conflicted": 38,
+        "Disputed": 1
+      }
+    ],
+    "auditor": "GPT4oContextAuditor",
+    "reported_run": {
+      "Verified": 734,
+      "Conflicted": 36,
+      "Disputed": 0
+    },
+    "reported_run_inside_range": {
+      "Verified": true,
+      "Conflicted": true,
+      "Disputed": true
+    }
+  },
+  "failure_analysis": {
+    "cleared_by_type": {
+      "T2": 53,
+      "T1": 37,
+      "T3_candidate": 26
+    },
+    "unparsed": 7
+  },
+  "injection": {
+    "n": 155,
+    "detected": 122,
+    "confirmed_corpus_referenced": 96,
+    "confirmed_oracle_referenced": 118,
+    "coverage": {
+      "corpus": 1.0,
+      "oracle": 1.0
+    },
+    "by_type": {
+      "T1": {
+        "n": 38,
+        "det": 38,
+        "type_ok": 38,
+        "conf": 35
+      },
+      "T2": {
+        "n": 57,
+        "det": 38,
+        "type_ok": 38,
+        "conf": 36
+      },
+      "T3": {
+        "n": 60,
+        "det": 46,
+        "type_ok": 38,
+        "conf": 25
+      }
+    }
+  },
+  "gold_false_alarm": {
+    "n_gold": 60,
+    "rule_stage": 3,
+    "post_audit": 2,
+    "fully_audited": true,
+    "flagged_ids": [
+      "GS-005",
+      "GS-009",
+      "GS-057"
+    ]
+  },
+  "recall": {
+    "by_tau": {
+      "0.4": 0.9667,
+      "0.5": 0.9,
+      "0.6": 0.85,
+      "0.7": 0.6333,
+      "0.8": 0.4667,
+      "0.9": 0.3833
+    },
+    "tau": 0.5,
+    "exact": 0.3333,
+    "missed_ids": [
+      "GS-004",
+      "GS-005",
+      "GS-017",
+      "GS-018",
+      "GS-048",
+      "GS-049"
+    ]
+  },
+  "kg": {
+    "total_nodes": 1017,
+    "total_edges": 1144,
+    "uncertain_edges": 36,
+    "conflict_breakdown": "{'T1': 24, 'T2': 12}",
+    "confidence_level_breakdown": "{'Verified': 1108, 'Conflicted': 36}",
+    "edge_type_breakdown": "{'relational': 770, 'causal': 374}",
+    "avg_confidence": 0.8383741258741259,
+    "simple_causal_paths_by_depth": {
+      "1": 374,
+      "2": 75,
+      "3": 18,
+      "4": 3
+    },
+    "causal_entities": 510,
+    "nodes": 1017,
+    "edges": 1144,
+    "longest_simple_causal_chain_hops": 4
+  },
+  "confidence_reach": {
+    "B2": {
+      "queries_with_graded": 14,
+      "conflicted_items": 68,
+      "disputed_items": 0
+    },
+    "B3": {
+      "queries_with_graded": 14,
+      "conflicted_items": 72,
+      "disputed_items": 0
+    },
+    "B5": {
+      "queries_with_graded": 14,
+      "conflicted_items": 72,
+      "disputed_items": 0
+    }
+  },
+  "baseline_spec": {
+    "B1": {
+      "retrieval": "TF-IDF over raw PDF text chunks, top 5",
+      "graph": false,
+      "multi_hop": false,
+      "community_summaries": false,
+      "confidence_shown": false
+    },
+    "B2": {
+      "retrieval": "knowledge graph, one-hop neighbours of the matched nodes",
+      "graph": true,
+      "multi_hop": false,
+      "community_summaries": false,
+      "confidence_shown": false
+    },
+    "B3": {
+      "retrieval": "knowledge graph, multi-hop simple paths over causal edges",
+      "graph": true,
+      "multi_hop": true,
+      "community_summaries": false,
+      "confidence_shown": false
+    },
+    "B5": {
+      "retrieval": "identical to B3",
+      "graph": true,
+      "multi_hop": true,
+      "community_summaries": false,
+      "confidence_shown": true
+    },
+    "B4": {
+      "retrieval": "identical to B3 and B5",
+      "graph": true,
+      "multi_hop": true,
+      "community_summaries": false,
+      "confidence_shown": false
+    }
+  },
+  "baseline_labels": {
+    "B1": "Naive RAG",
+    "B2": "Single-hop KG-RAG",
+    "B3": "Multi-hop KG-RAG without auditing",
+    "B5": "Multi-hop KG-RAG with Self-Auditing (proposed)",
+    "B4": "Multi-hop KG-RAG + self-assessment prompt (control)"
+  },
+  "regenerated_answers": {
+    "model": "gpt-4o",
+    "n": 100,
+    "levels": {
+      "B1": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {},
+        "9": {},
+        "10": {},
+        "11": {},
+        "12": {},
+        "13": {},
+        "14": {},
+        "15": {},
+        "16": {},
+        "17": {},
+        "18": {},
+        "19": {}
+      },
+      "B2": {
+        "0": {
+          "Verified": 25,
+          "Conflicted": 3
+        },
+        "1": {
+          "Verified": 17
+        },
+        "2": {
+          "Verified": 23,
+          "Conflicted": 2
+        },
+        "3": {
+          "Verified": 35,
+          "Conflicted": 4
+        },
+        "4": {
+          "Verified": 25,
+          "Conflicted": 4
+        },
+        "5": {
+          "Verified": 54,
+          "Conflicted": 12
+        },
+        "6": {
+          "Verified": 37,
+          "Conflicted": 2
+        },
+        "7": {
+          "Verified": 45,
+          "Conflicted": 4
+        },
+        "8": {
+          "Verified": 29,
+          "Conflicted": 5
+        },
+        "9": {
+          "Verified": 25,
+          "Conflicted": 4
+        },
+        "10": {
+          "Verified": 24
+        },
+        "11": {
+          "Verified": 45,
+          "Conflicted": 7
+        },
+        "12": {
+          "Verified": 25,
+          "Conflicted": 4
+        },
+        "13": {
+          "Verified": 16
+        },
+        "14": {
+          "Verified": 41,
+          "Conflicted": 6
+        },
+        "15": {
+          "Verified": 10
+        },
+        "16": {
+          "Verified": 29,
+          "Conflicted": 4
+        },
+        "17": {
+          "Verified": 9
+        },
+        "18": {
+          "Verified": 54,
+          "Conflicted": 7
+        },
+        "19": {
+          "Verified": 6
+        }
+      },
+      "B3": {
+        "0": {
+          "Verified": 23,
+          "Conflicted": 7
+        },
+        "1": {
+          "Verified": 9
+        },
+        "2": {
+          "Verified": 14,
+          "Conflicted": 2
+        },
+        "3": {
+          "Verified": 34,
+          "Conflicted": 4
+        },
+        "4": {
+          "Verified": 17,
+          "Conflicted": 4
+        },
+        "5": {
+          "Verified": 26,
+          "Conflicted": 12
+        },
+        "6": {
+          "Verified": 18,
+          "Conflicted": 2
+        },
+        "7": {
+          "Verified": 18,
+          "Conflicted": 4
+        },
+        "8": {
+          "Verified": 14,
+          "Conflicted": 5
+        },
+        "9": {
+          "Verified": 17,
+          "Conflicted": 4
+        },
+        "10": {
+          "Verified": 23
+        },
+        "11": {
+          "Verified": 31,
+          "Conflicted": 7
+        },
+        "12": {
+          "Verified": 27,
+          "Conflicted": 4
+        },
+        "13": {
+          "Verified": 10
+        },
+        "14": {
+          "Verified": 16,
+          "Conflicted": 6
+        },
+        "15": {
+          "Verified": 11
+        },
+        "16": {
+          "Verified": 23,
+          "Conflicted": 4
+        },
+        "17": {
+          "Verified": 7
+        },
+        "18": {
+          "Verified": 31,
+          "Conflicted": 7
+        },
+        "19": {
+          "Verified": 5
+        }
+      },
+      "B4": {
+        "0": {
+          "Verified": 23,
+          "Conflicted": 7
+        },
+        "1": {
+          "Verified": 9
+        },
+        "2": {
+          "Verified": 14,
+          "Conflicted": 2
+        },
+        "3": {
+          "Verified": 34,
+          "Conflicted": 4
+        },
+        "4": {
+          "Verified": 17,
+          "Conflicted": 4
+        },
+        "5": {
+          "Verified": 26,
+          "Conflicted": 12
+        },
+        "6": {
+          "Verified": 18,
+          "Conflicted": 2
+        },
+        "7": {
+          "Verified": 18,
+          "Conflicted": 4
+        },
+        "8": {
+          "Verified": 14,
+          "Conflicted": 5
+        },
+        "9": {
+          "Verified": 17,
+          "Conflicted": 4
+        },
+        "10": {
+          "Verified": 23
+        },
+        "11": {
+          "Verified": 31,
+          "Conflicted": 7
+        },
+        "12": {
+          "Verified": 27,
+          "Conflicted": 4
+        },
+        "13": {
+          "Verified": 10
+        },
+        "14": {
+          "Verified": 16,
+          "Conflicted": 6
+        },
+        "15": {
+          "Verified": 11
+        },
+        "16": {
+          "Verified": 23,
+          "Conflicted": 4
+        },
+        "17": {
+          "Verified": 7
+        },
+        "18": {
+          "Verified": 31,
+          "Conflicted": 7
+        },
+        "19": {
+          "Verified": 5
+        }
+      },
+      "B5": {
+        "0": {
+          "Verified": 23,
+          "Conflicted": 7
+        },
+        "1": {
+          "Verified": 9
+        },
+        "2": {
+          "Verified": 14,
+          "Conflicted": 2
+        },
+        "3": {
+          "Verified": 34,
+          "Conflicted": 4
+        },
+        "4": {
+          "Verified": 17,
+          "Conflicted": 4
+        },
+        "5": {
+          "Verified": 26,
+          "Conflicted": 12
+        },
+        "6": {
+          "Verified": 18,
+          "Conflicted": 2
+        },
+        "7": {
+          "Verified": 18,
+          "Conflicted": 4
+        },
+        "8": {
+          "Verified": 14,
+          "Conflicted": 5
+        },
+        "9": {
+          "Verified": 17,
+          "Conflicted": 4
+        },
+        "10": {
+          "Verified": 23
+        },
+        "11": {
+          "Verified": 31,
+          "Conflicted": 7
+        },
+        "12": {
+          "Verified": 27,
+          "Conflicted": 4
+        },
+        "13": {
+          "Verified": 10
+        },
+        "14": {
+          "Verified": 16,
+          "Conflicted": 6
+        },
+        "15": {
+          "Verified": 11
+        },
+        "16": {
+          "Verified": 23,
+          "Conflicted": 4
+        },
+        "17": {
+          "Verified": 7
+        },
+        "18": {
+          "Verified": 31,
+          "Conflicted": 7
+        },
+        "19": {
+          "Verified": 5
+        }
+      }
+    }
+  },
+  "regenerated_ablation": {
+    "delta": -0.08549905838041383,
+    "n": 20,
+    "n_tied": 2,
+    "p": 0.7070431256093546
+  },
+  "regenerated_judging": {
+    "n": 299,
+    "expected": 300,
+    "models": {
+      "J1": "gpt-4o",
+      "J2": "claude-sonnet-4-6",
+      "J3": "meta-llama-3.1-8b-instruct"
+    },
+    "answers_version": "graded-evidence-kept-v3-deterministic",
+    "local_judge": {
+      "base_url": "http://localhost:1234/v1",
+      "model": "meta-llama-3.1-8b-instruct"
+    },
+    "judges_present": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "judges_shared_with_recorded": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "means_shared_judges": {
+      "B1": 2.6277777777777773,
+      "B2": 2.8555555555555556,
+      "B3": 3.622222222222222,
+      "B4": 3.311111111111111,
+      "B5": 3.536723163841808
+    }
+  },
+  "regenerated_available": true,
+  "reporting_source": "regenerated",
+  "judging_source": "regenerated",
+  "reported_panel": {
+    "judges": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "n_queries": 19,
+    "excluded_queries": [
+      11
+    ],
+    "excluded_reason": "a hosted judge refused the item permanently; the query is dropped from the whole panel to keep the grid rectangular",
+    "n_judgments": 285,
+    "rectangular": true,
+    "short_panel": false
+  },
+  "evaluation": {
+    "source": "regenerated",
+    "n_judgments": 285,
+    "judges": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "means": {
+      "B1": 2.6315789473684212,
+      "B2": 2.8596491228070176,
+      "B3": 3.625730994152047,
+      "B4": 3.3216374269005846,
+      "B5": 3.5263157894736845
+    },
+    "means_by_criterion": {
+      "B1": {
+        "FA": 3.0350877192982457,
+        "CV": 2.491228070175439,
+        "AC": 2.3684210526315788
+      },
+      "B2": {
+        "FA": 3.1578947368421053,
+        "CV": 2.6140350877192984,
+        "AC": 2.807017543859649
+      },
+      "B3": {
+        "FA": 3.8596491228070176,
+        "CV": 3.491228070175439,
+        "AC": 3.526315789473684
+      },
+      "B4": {
+        "FA": 3.736842105263158,
+        "CV": 3.192982456140351,
+        "AC": 3.0350877192982457
+      },
+      "B5": {
+        "FA": 3.7719298245614037,
+        "CV": 3.491228070175439,
+        "AC": 3.3157894736842106
+      }
+    },
+    "krippendorff_ordinal": {
+      "FA": 0.12700482777850475,
+      "CV": 0.49132360603740544,
+      "AC": 0.16603192706319436,
+      "overall": 0.3777323619684928
+    },
+    "wilcoxon_method": "approx",
+    "wilcoxon_ties": {
+      "B1": {
+        "n": 19,
+        "zeros": 0,
+        "tied_magnitudes": 2
+      },
+      "B2": {
+        "n": 19,
+        "zeros": 2,
+        "tied_magnitudes": 3
+      },
+      "B3": {
+        "n": 19,
+        "zeros": 2,
+        "tied_magnitudes": 5
+      }
+    },
+    "wilcoxon_holm_9": {
+      "B5>B1 [CV]": 0.0034373255173381434,
+      "B5>B2 [CV]": 0.0090052968476244,
+      "B5>B1 [FA]": 0.0090052968476244,
+      "B5>B1 [AC]": 0.0143853083405934,
+      "B5>B2 [FA]": 0.06315802973967462,
+      "B5>B2 [AC]": 0.06315802973967462,
+      "B5>B3 [CV]": 1.0,
+      "B5>B3 [FA]": 1.0,
+      "B5>B3 [AC]": 1.0
+    },
+    "wilcoxon_holm_overall": {
+      "B5>B1": 0.0022059242092151462,
+      "B5>B2": 0.007465070512508516,
+      "B5>B3": 0.782815118171893
+    },
+    "agreement": {
+      "overall": {
+        "ICC_A1": 0.44796011314061046,
+        "ICC_C1": 0.5955575384811498,
+        "ICC_Ak": 0.7088274711103242,
+        "ICC_Ck": 0.8154170605774126,
+        "kendall_W": 0.7644456693886444,
+        "spearman_mean": 0.6463214945458599,
+        "spearman_pairs": {
+          "1-2": 0.735611013261014,
+          "1-3": 0.5910627591121659,
+          "2-3": 0.6122907112643996
+        },
+        "rater_means": [
+          3.2771929824561403,
+          2.645614035087718,
+          3.6561403508771932
+        ],
+        "rater_sds": [
+          0.723879474149142,
+          0.7684846258266266,
+          1.1081608211915763
+        ]
+      },
+      "by_criterion": {
+        "FA": {
+          "ICC_A1": 0.2297837749959356,
+          "ICC_C1": 0.30382631126397247,
+          "ICC_Ak": 0.47229833589520814,
+          "ICC_Ck": 0.5669626143231534,
+          "kendall_W": 0.5464552932146832,
+          "spearman_mean": 0.32430948572355256,
+          "spearman_pairs": {
+            "1-2": 0.4616291653717204,
+            "1-3": 0.18164267558787162,
+            "2-3": 0.3296566162110657
+          },
+          "rater_means": [
+            3.8105263157894735,
+            2.8947368421052633,
+            3.831578947368421
+          ],
+          "rater_sds": [
+            0.6731118088986664,
+            0.7918962457631384,
+            1.2347161925510728
+          ]
+        },
+        "CV": {
+          "ICC_A1": 0.4653406067056946,
+          "ICC_C1": 0.4962048662836065,
+          "ICC_Ak": 0.7230721521604301,
+          "ICC_Ck": 0.7471428062804857,
+          "kendall_W": 0.707359137884972,
+          "spearman_mean": 0.5621042036375136,
+          "spearman_pairs": {
+            "1-2": 0.6738622370009674,
+            "1-3": 0.4842620986885919,
+            "2-3": 0.5281882752229816
+          },
+          "rater_means": [
+            3.357894736842105,
+            2.8210526315789473,
+            2.9894736842105263
+          ],
+          "rater_sds": [
+            0.8368607687355162,
+            0.8626893547113959,
+            1.3086840624703666
+          ]
+        },
+        "AC": {
+          "ICC_A1": 0.2902356678364129,
+          "ICC_C1": 0.5285939298479432,
+          "ICC_Ak": 0.5509160361573835,
+          "ICC_Ck": 0.7708492844101537,
+          "kendall_W": 0.7203299707073482,
+          "spearman_mean": 0.5753345340320198,
+          "spearman_pairs": {
+            "1-2": 0.7822881065077534,
+            "1-3": 0.517293774107812,
+            "2-3": 0.4264217214804941
+          },
+          "rater_means": [
+            2.663157894736842,
+            2.221052631578947,
+            4.147368421052631
+          ],
+          "rater_sds": [
+            1.0376992381449386,
+            0.9130140332218462,
+            1.3366234137018513
+          ]
+        }
+      }
+    },
+    "b5_bootstrap_ci95": [
+      3.327485380116959,
+      3.7192982456140347
+    ]
+  },
+  "ur_disclosure": {
+    "pre_fix_answers_diagnostic": {
+      "B1": [
+        1,
+        14
+      ],
+      "B2": [
+        0,
+        14
+      ],
+      "B3": [
+        1,
+        14
+      ],
+      "B4": [
+        0,
+        14
+      ],
+      "B5": [
+        0,
+        14
+      ]
+    },
+    "this_run": {
+      "B1": [
+        0,
+        14
+      ],
+      "B2": [
+        1,
+        14
+      ],
+      "B3": [
+        0,
+        14
+      ],
+      "B4": [
+        1,
+        14
+      ],
+      "B5": [
+        10,
+        14
+      ]
+    },
+    "queries_with_disagreement": 14,
+    "reported": true
+  },
+  "groundedness": {
+    "B1": {
+      "grounded": 13,
+      "used": 13,
+      "answers_with_numbers": 4
+    },
+    "B2": {
+      "grounded": 25,
+      "used": 25,
+      "answers_with_numbers": 12
+    },
+    "B3": {
+      "grounded": 31,
+      "used": 31,
+      "answers_with_numbers": 11
+    },
+    "B4": {
+      "grounded": 38,
+      "used": 38,
+      "answers_with_numbers": 11
+    },
+    "B5": {
+      "grounded": 43,
+      "used": 43,
+      "answers_with_numbers": 12
+    }
+  },
+  "ur_ablation": {
+    "delta": 1.5476190476190474,
+    "n": 14,
+    "p": 0.003347741348960182
+  },
+  "ur_agreement": {
+    "ICC_A1": 0.39257278490520686,
+    "ICC_C1": 0.4129974397066725,
+    "ICC_Ak": 0.6597323908104014,
+    "ICC_Ck": 0.6785300074434384,
+    "kendall_W": 0.6005946395943477,
+    "spearman_mean": 0.4014711971772131,
+    "spearman_pairs": {
+      "1-2": 0.4753710628893966,
+      "1-3": 0.2503625703590197,
+      "2-3": 0.4786799582832228
+    },
+    "rater_means": [
+      2.8285714285714287,
+      3.0714285714285716,
+      3.5428571428571427
+    ],
+    "rater_sds": [
+      1.7690694235271833,
+      1.053928861711574,
+      1.51977986855376
+    ]
+  },
+  "ur_scores": {
+    "n": 210,
+    "judges": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "queries": 14,
+    "means": {
+      "B1": 3.1904761904761907,
+      "B2": 3.1666666666666665,
+      "B3": 2.357142857142857,
+      "B4": 3.119047619047619,
+      "B5": 3.9047619047619047
+    }
+  },
+  "prompting_control": {
+    "conditions": [
+      "B3",
+      "B4",
+      "B5"
+    ],
+    "rubric_means": {
+      "B3": 3.625730994152047,
+      "B4": 3.321637426900585,
+      "B5": 3.5263157894736836
+    },
+    "ur_means": {
+      "B3": 2.357142857142857,
+      "B4": 3.119047619047619,
+      "B5": 3.9047619047619047
+    },
+    "ur_deltas": {
+      "B5-B3": 1.5476190476190474,
+      "B5-B4": 0.7857142857142856,
+      "B4-B3": 0.7619047619047619
+    },
+    "wilcoxon": {
+      "B5>B4": 0.042915479222142824,
+      "B4>B3": 0.028902004796591784,
+      "B5>B3": 0.003347741348960182
+    },
+    "disclosure_mcnemar": {
+      "vocabulary-only disclosure (S1, sensitivity; NOT the reported measure)": {
+        "raw": {
+          "B5>B3": 0.0009765625,
+          "B5>B4": 0.001953125,
+          "B4>B3": 0.5
+        },
+        "holm": {
+          "B5>B3": 0.0029296875,
+          "B5>B4": 0.00390625,
+          "B4>B3": 0.5
+        }
+      },
+      "over-inclusive net (sensitivity floor, do NOT quote as a rate)": {
+        "raw": {
+          "B5>B3": 0.01953125,
+          "B5>B4": 0.0625,
+          "B4>B3": 0.1875
+        },
+        "holm": {
+          "B5>B3": 0.05859375,
+          "B5>B4": 0.125,
+          "B4>B3": 0.1875
+        }
+      }
+    },
+    "b4_system_prompt": "Answer using the retrieved knowledge-graph subgraph. Trace the multi-step relations to explain the mechanism. Before answering, examine the evidence for disagreement: if two or more items report different values for the same quantity, treat that quantity as unsettled. State explicitly where the literature disagrees, give the divergent values, and do not present any of them as settled. Where the evidence agrees, answer normally. Answer in at most 150 words. Use ONLY the retrieved evidence above: if it does not answer the question, say so plainly and stop. Do not supply general best-practice advice from prior knowledge, and do not pad.",
+    "b5_system_prompt": "Answer using the retrieved knowledge-graph subgraph. Trace the multi-step relations to explain the mechanism. Each item carries a Confidence Level (Verified / Disputed / Conflicted) assigned by the Self-Auditing pipeline. Prefer Verified evidence, and state explicitly where the literature disagrees rather than presenting a disputed value as settled. Answer in at most 150 words. Use ONLY the retrieved evidence above: if it does not answer the question, say so plainly and stop. Do not supply general best-practice advice from prior knowledge, and do not pad."
+  },
+  "std_ctx_instrument_check": {
+    "identical_evidence": true,
+    "n_pairs": 57,
+    "n_nonzero": 7,
+    "mean_delta": -0.10526315789473684,
+    "sd_delta": 0.6177207681213422,
+    "wilcoxon_two_sided_p": 0.2059032107320684,
+    "interpretation": "validity check on the CTX instruction, not a noise floor; a significant result means the answer leaked into a retrieval-side metric"
+  },
+  "evaluation_standard_rubric": {
+    "rubric_sha": "e1b11235d91a",
+    "judges": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "conditions": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5"
+    ],
+    "n_queries": 19,
+    "evidence_shown_to_judge": true,
+    "means": {
+      "B1": {
+        "FTH": 4.824561403508772,
+        "ANR": 4.5964912280701755,
+        "CTX": 3.491228070175439
+      },
+      "B2": {
+        "FTH": 4.719298245614035,
+        "ANR": 4.649122807017544,
+        "CTX": 3.6491228070175437
+      },
+      "B3": {
+        "FTH": 4.7368421052631575,
+        "ANR": 4.684210526315789,
+        "CTX": 4.017543859649122
+      },
+      "B4": {
+        "FTH": 4.7894736842105265,
+        "ANR": 4.684210526315789,
+        "CTX": 3.912280701754386
+      },
+      "B5": {
+        "FTH": 4.807017543859649,
+        "ANR": 4.684210526315789,
+        "CTX": 4.0
+      }
+    },
+    "krippendorff_ordinal": {
+      "FTH": 0.08558471204431983,
+      "ANR": -0.22548779747857672,
+      "CTX": 0.21527830181640517,
+      "FTH+ANR": -0.07898592816458327
+    },
+    "wilcoxon_raw": {
+      "B5>B3[FTH]": 0.13159953908062888,
+      "B5>B3[ANR]": 0.5684589992727932,
+      "B5>B4[FTH]": 0.37386508231206733,
+      "B5>B4[ANR]": 0.4161116955512896,
+      "B3>B2[FTH]": 0.4294038902834699,
+      "B3>B2[ANR]": 0.15264890397601788,
+      "B2>B1[FTH]": 0.7638628647968657,
+      "B2>B1[ANR]": 0.20826832071716794
+    },
+    "wilcoxon_holm": {
+      "B5>B3[FTH]": 1.0,
+      "B3>B2[ANR]": 1.0,
+      "B2>B1[ANR]": 1.0,
+      "B5>B4[FTH]": 1.0,
+      "B5>B4[ANR]": 1.0,
+      "B3>B2[FTH]": 1.0,
+      "B5>B3[ANR]": 1.0,
+      "B2>B1[FTH]": 1.0
+    },
+    "wilcoxon_delta": {
+      "B5>B3[FTH]": 0.07017543859649131,
+      "B5>B3[ANR]": -4.674623261579606e-17,
+      "B5>B4[FTH]": 0.017543859649122837,
+      "B5>B4[ANR]": 2.337311630789803e-17,
+      "B3>B2[FTH]": 0.017543859649122816,
+      "B3>B2[ANR]": 0.03508771929824572,
+      "B2>B1[FTH]": -0.10526315789473682,
+      "B2>B1[ANR]": 0.05263157894736847
+    },
+    "multiple_comparison": "Holm over the whole family printed above",
+    "implementation": "own anchored 1-5 LLM-judge rubric on the faithfulness / answer-relevance / context-relevance dimensions; NOT the RAGAS or ARES implementations, which score claim-support ratios",
+    "note": "FA/CV/AC of Part 9 retained as the appendix comparison and the link to the recorded study"
+  },
+  "case_c1": {
+    "max_hops": 2,
+    "sources_spanned": [
+      "S01"
+    ],
+    "path": [
+      "Low dissolved oxygen concentration",
+      "Decrease in root water and nutrient uptake",
+      "Growth of wasabi plantlets"
+    ],
+    "n_chains_ge4": 0,
+    "n_chains_ge7": 0
+  },
+  "case_c1_illustration": {
+    "query": "How does low dissolved oxygen (DO) affect wasabi rhizome yield?",
+    "model": "gpt-4o",
+    "scored": false,
+    "note": "regenerated for illustration; not part of the Table 11 evaluation",
+    "n_paths": 25,
+    "hops": {
+      "4": 2,
+      "2": 23
+    },
+    "levels": {
+      "Verified": 21,
+      "Conflicted": 4
+    },
+    "longest_retrieved_hops": 4,
+    "retrieval_version": "confidence-then-chain-length|graded-evidence-kept-v3-deterministic",
+    "queries_with_uncertainty": [
+      {
+        "n_non_verified": 12,
+        "query": "How does PPFD influence wasabi growth under artificial light?"
+      },
+      {
+        "n_non_verified": 7,
+        "query": "What is the optimal water temperature for wasabi hydroponic cultivation?"
+      },
+      {
+        "n_non_verified": 7,
+        "query": "How does hydroponic vs natural cultivation affect wasabi water temperature?"
+      },
+      {
+        "n_non_verified": 7,
+        "query": "How does dissolved oxygen interact with water temperature for wasabi?"
+      },
+      {
+        "n_non_verified": 6,
+        "query": "Why do reported pH values for wasabi vary across studies?"
+      }
+    ]
+  },
+  "strawberry": {
+    "n_papers": 76,
+    "n_triplets": 2700,
+    "cache_sha256": "05126b5f080d10fda861fdc403e1defc615147c96bf0c1fa3c2e2ccb41dbe61a",
+    "parameters": [
+      "water_temp",
+      "air_temp",
+      "DO",
+      "EC",
+      "pH",
+      "PPFD",
+      "photoperiod",
+      "DLI"
+    ],
+    "confidence_weights": {
+      "Verified": 1.0,
+      "Disputed": 0.5,
+      "Conflicted": 0.25
+    },
+    "full_corpus": {
+      "water_temp": 20.0,
+      "air_temp": 20.7,
+      "DO": 5.99,
+      "EC": 1.5,
+      "pH": 5.9,
+      "PPFD": 300.0,
+      "photoperiod": 14.0,
+      "DLI": 13.0
+    },
+    "agrees_with_metrics_py": true
+  },
+  "strawberry_table": {
+    "water_temp": {
+      "19": [
+        19.825,
+        0.7925632881080007
+      ],
+      "38": [
+        20.01,
+        0.21296369491895878
+      ],
+      "57": [
+        20.0,
+        0.0
+      ]
+    },
+    "air_temp": {
+      "19": [
+        20.116,
+        1.9334754388735516
+      ],
+      "38": [
+        20.334,
+        0.780471238121786
+      ],
+      "57": [
+        20.602999999999998,
+        0.5265582934145433
+      ]
+    },
+    "DO": {
+      "19": [
+        5.593999999999999,
+        0.4911775489732656
+      ],
+      "38": [
+        5.748846153846155,
+        0.4277059943260297
+      ],
+      "57": [
+        5.800425531914895,
+        0.3916271951566607
+      ]
+    },
+    "EC": {
+      "19": [
+        1.5204,
+        0.16500945794748012
+      ],
+      "38": [
+        1.5123,
+        0.07144758621365441
+      ],
+      "57": [
+        1.505,
+        0.021904291355759047
+      ]
+    },
+    "pH": {
+      "19": [
+        5.935999999999999,
+        0.26305124899144583
+      ],
+      "38": [
+        5.883999999999999,
+        0.10122482228418414
+      ],
+      "57": [
+        5.903,
+        0.07581876316905242
+      ]
+    },
+    "PPFD": {
+      "19": [
+        271.57894736842104,
+        35.319688604735724
+      ],
+      "38": [
+        286.5656565656566,
+        20.709931372959353
+      ],
+      "57": [
+        289.1,
+        18.753854822597688
+      ]
+    },
+    "photoperiod": {
+      "19": [
+        14.204081632653061,
+        1.7816891306330251
+      ],
+      "38": [
+        14.2,
+        1.4633571475938953
+      ],
+      "57": [
+        14.22,
+        1.1684402103884157
+      ]
+    },
+    "DLI": {
+      "19": [
+        15.799999999999995,
+        3.842320727298617
+      ],
+      "38": [
+        14.85806451612903,
+        3.4944155006874325
+      ],
+      "57": [
+        14.313131313131311,
+        2.9803659022261577
+      ]
+    }
+  },
+  "strawberry_convergence": {
+    "n_draws": 100,
+    "sizes": [
+      19,
+      38,
+      57
+    ],
+    "trimmed_mean_proportion": 0.1,
+    "normalizers_reported_in_paper": [
+      "plausible range (primary)",
+      "interquartile range",
+      "standard deviation"
+    ],
+    "mean_normalized_error_by_normalizer": {
+      "plausible range (primary)": [
+        0.07686121330110976,
+        0.045682004330794834,
+        0.03218651733904379
+      ],
+      "interquartile range": [
+        0.16682186255682474,
+        0.09418359515335355,
+        0.06237444480263599
+      ],
+      "standard deviation": [
+        0.2204759812383597,
+        0.13038523179350378,
+        0.09330081505483633
+      ],
+      "observed range (exploratory)": [
+        0.08011087679613851,
+        0.04851875211763996,
+        0.03620469950655841
+      ]
+    },
+    "headline_error": {
+      "19": 0.07686121330110976,
+      "38": 0.045682004330794834,
+      "57": 0.03218651733904379
+    },
+    "deviation_over_data_sd": {
+      "water_temp": [
+        0.08460812826585966,
+        0.0048347501866212875,
+        0.0
+      ],
+      "air_temp": [
+        0.13731700568451927,
+        0.08605826041187335,
+        0.022807790327737255
+      ],
+      "DO": [
+        0.6337663221072464,
+        0.38594743974479545,
+        0.3033987712215517
+      ],
+      "EC": [
+        0.05297835325004274,
+        0.031942830636055165,
+        0.012984890502461197
+      ],
+      "pH": [
+        0.07186811833844813,
+        0.0319413859282039,
+        0.005989009861536014
+      ],
+      "PPFD": [
+        0.23906038543645763,
+        0.11300142050092171,
+        0.09168408485905602
+      ],
+      "photoperiod": [
+        0.0891935351468778,
+        0.08740966444394004,
+        0.09615063088833466
+      ],
+      "DLI": [
+        0.455016001677426,
+        0.3019461024956192,
+        0.21339134277801372
+      ]
+    },
+    "sd_sufficiency_claim": {
+      "max_at_57": 0.3033987712215517,
+      "argmax": "DO",
+      "n_le_0_1": 6,
+      "n_le_1_0": 8,
+      "n_params": 8,
+      "paper_claim_holds": false
+    },
+    "representativeness": {
+      "water_temp": {
+        "full": 20.0,
+        "mean": 19.825,
+        "sd": 0.7925632881080007,
+        "z": 0.22080255624476247,
+        "abs_z": 0.22080255624476247,
+        "inside_z1": true,
+        "c80": [
+          19.5,
+          20.0
+        ],
+        "inside_80": true,
+        "c95": [
+          18.0,
+          21.0
+        ],
+        "inside_95": true
+      },
+      "air_temp": {
+        "full": 20.7,
+        "mean": 20.116,
+        "sd": 1.9334754388735516,
+        "z": 0.3020467642145171,
+        "abs_z": 0.3020467642145171,
+        "inside_z1": true,
+        "c80": [
+          17.0,
+          22.0
+        ],
+        "inside_80": true,
+        "c95": [
+          16.2,
+          25.0
+        ],
+        "inside_95": true
+      },
+      "DO": {
+        "full": 5.99,
+        "mean": 5.593999999999999,
+        "sd": 0.4911775489732656,
+        "z": 0.8062257748298564,
+        "abs_z": 0.8062257748298564,
+        "inside_z1": true,
+        "c80": [
+          5.0,
+          5.99
+        ],
+        "inside_80": true,
+        "c95": [
+          5.0,
+          5.99
+        ],
+        "inside_95": true
+      },
+      "EC": {
+        "full": 1.5,
+        "mean": 1.5204,
+        "sd": 0.16500945794748012,
+        "z": -0.12362927709569817,
+        "abs_z": 0.12362927709569817,
+        "inside_z1": true,
+        "c80": [
+          1.39,
+          1.65
+        ],
+        "inside_80": true,
+        "c95": [
+          1.2,
+          2.0
+        ],
+        "inside_95": true
+      },
+      "pH": {
+        "full": 5.9,
+        "mean": 5.935999999999999,
+        "sd": 0.26305124899144583,
+        "z": -0.13685546120014577,
+        "abs_z": 0.13685546120014577,
+        "inside_z1": true,
+        "c80": [
+          5.6,
+          6.410000000000001
+        ],
+        "inside_80": true,
+        "c95": [
+          5.5,
+          6.5
+        ],
+        "inside_95": true
+      },
+      "PPFD": {
+        "full": 300.0,
+        "mean": 271.57894736842104,
+        "sd": 35.319688604735724,
+        "z": 0.804680158696762,
+        "abs_z": 0.804680158696762,
+        "inside_z1": true,
+        "c80": [
+          250.0,
+          300.0
+        ],
+        "inside_80": true,
+        "c95": [
+          200.0,
+          300.0
+        ],
+        "inside_95": true
+      },
+      "photoperiod": {
+        "full": 14.0,
+        "mean": 14.204081632653061,
+        "sd": 1.7816891306330251,
+        "z": -0.11454390619790773,
+        "abs_z": 0.11454390619790773,
+        "inside_z1": true,
+        "c80": [
+          12.0,
+          16.0
+        ],
+        "inside_80": true,
+        "c95": [
+          12.0,
+          16.0
+        ],
+        "inside_95": true
+      },
+      "DLI": {
+        "full": 13.0,
+        "mean": 15.799999999999995,
+        "sd": 3.842320727298617,
+        "z": -0.7287262565320944,
+        "abs_z": 0.7287262565320944,
+        "inside_z1": true,
+        "c80": [
+          12.0,
+          20.0
+        ],
+        "inside_80": true,
+        "c95": [
+          12.0,
+          20.0
+        ],
+        "inside_95": true
+      }
+    },
+    "mean_abs_z": 0.404688769376468,
+    "max_abs_z": {
+      "parameter": "DO",
+      "value": 0.8062257748298564
+    },
+    "central_region_definition": null,
+    "coverage": {
+      "z_lt_1": "8/8",
+      "central_80": "8/8",
+      "empirical_95": "8/8"
+    },
+    "draw_robustness_25_vs_100": {
+      "water_temp": {
+        "mean25": 19.82,
+        "mean100": 19.825,
+        "sd25": 0.8276472678623424,
+        "sd100": 0.7925632881080007
+      },
+      "air_temp": {
+        "mean25": 19.752,
+        "mean100": 20.116,
+        "sd25": 1.6698602735957682,
+        "sd100": 1.9334754388735516
+      },
+      "DO": {
+        "mean25": 5.594000000000001,
+        "mean100": 5.593999999999999,
+        "sd25": 0.4950000000000001,
+        "sd100": 0.4911775489732656
+      },
+      "EC": {
+        "mean25": 1.5216,
+        "mean100": 1.5204,
+        "sd25": 0.14533524463575012,
+        "sd100": 0.16500945794748012
+      },
+      "pH": {
+        "mean25": 5.836000000000001,
+        "mean100": 5.935999999999999,
+        "sd25": 0.22338307903688687,
+        "sd100": 0.26305124899144583
+      },
+      "PPFD": {
+        "mean25": 277.2,
+        "mean100": 271.57894736842104,
+        "sd25": 27.465129406819358,
+        "sd100": 35.319688604735724
+      },
+      "photoperiod": {
+        "mean25": 14.08,
+        "mean100": 14.204081632653061,
+        "sd25": 2.039607805437114,
+        "sd100": 1.7816891306330251
+      },
+      "DLI": {
+        "mean25": 14.824000000000002,
+        "mean100": 15.799999999999995,
+        "sd25": 3.6388276500360206,
+        "sd100": 3.842320727298617
+      }
+    },
+    "aggregator_sensitivity": {
+      "weighted_median": [
+        0.07686121330110976,
+        0.045682004330794834,
+        0.03218651733904379
+      ],
+      "median": [
+        0.08445112486216352,
+        0.054741253079357885,
+        0.0444698109514597
+      ],
+      "mean": [
+        0.07842513462483877,
+        0.06749200174419202,
+        0.06535726794803326
+      ],
+      "trimmed_mean": [
+        0.07796668292172217,
+        0.06351628746137827,
+        0.06067250240728039
+      ]
+    },
+    "dli_by_aggregator": {
+      "weighted_median": {
+        "full": 13.0,
+        "by_size": [
+          15.799999999999995,
+          14.85806451612903,
+          14.313131313131311
+        ],
+        "norm_gap_at_19": 0.19999999999999968
+      },
+      "median": {
+        "full": 13.0,
+        "by_size": [
+          16.35577464788732,
+          15.524301075268816,
+          14.765050505050505
+        ],
+        "norm_gap_at_19": 0.2396981891348085
+      },
+      "mean": {
+        "full": 15.033846153846154,
+        "by_size": [
+          16.184105847204442,
+          15.799782773976323,
+          15.505239708663952
+        ],
+        "norm_gap_at_19": 0.08216140666844916
+      },
+      "trimmed_mean": {
+        "full": 14.938181818181818,
+        "by_size": [
+          16.181139280125198,
+          15.749301075268816,
+          15.419382716049382
+        ],
+        "norm_gap_at_19": 0.08878267585309858
+      }
+    }
+  },
+  "strawberry_closed_book": {
+    "water_temp": 20.0,
+    "air_temp": 24.0,
+    "DO": 8.0,
+    "EC": 1.4,
+    "pH": 5.8,
+    "PPFD": 250.0,
+    "photoperiod": 16.0,
+    "DLI": 17.0
+  },
+  "figures": [
+    "F10_strawberry_convergence",
+    "F11_strawberry_representativeness",
+    "F12_strawberry_normalizers",
+    "F1_pipeline_funnel",
+    "F2_detection_by_type",
+    "F3_confidence_levels",
+    "F4_injection",
+    "F5_recall_threshold",
+    "F6_knowledge_graph",
+    "F7_retrieved_subgraph",
+    "F8_judge_by_baseline",
+    "F9_judge_by_criterion"
+  ],
+  "tables": [
+    "T10_baselines",
+    "T11_judge_by_baseline",
+    "T12_judge_by_criterion",
+    "T13_significance",
+    "T14_strawberry_ladder",
+    "T15_strawberry_robustness",
+    "T1_corpus",
+    "T2_reference_tables",
+    "T3_step2_detection",
+    "T4_confidence_levels",
+    "T5_confirmed_combinations",
+    "T6_injection",
+    "T7_gold_false_alarm",
+    "T8_recall",
+    "T9_knowledge_graph"
+  ],
+  "audit_edits_owed": {
+    "n_owed": 21,
+    "n_rows": 41,
+    "by_status": {
+      "implemented": 20,
+      "EDIT PENDING": 12,
+      "PARTIAL": 4,
+      "CLAIM NOT SUPPORTED": 5
+    },
+    "sections": [
+      "§3.2.2 - only the two reference tables are domain-specific",
+      "§3.2.2 criterion (i) - T1 criterion (i) fires on NON-IDENTICAL values from different sources",
+      "Algorithm 1 L5-11 - the T3 branch is an `else if`, so T3 is tested only when T1 and T2 did",
+      "Algorithm 1 L6/L8 - LLM_Audit(t, flag, d_i) - the auditor receives the source document",
+      "§3.2.4 Definition 1 - D(t) takes a single value from {none, T1, T2, T3}",
+      "§3.3 - edges annotated with the Confidence Level",
+      "§3.3 - stored in Neo4j 5.x",
+      "§3.5 judge panel - three heterogeneous judges, two vendors plus one open-weight",
+      "§3.5 UR rubric - uncertainty reporting is not among the scored criteria",
+      "§4.1.2 generation control - the four conditions differ only in retrieval and the confidence layer",
+      "§4.1.2 Table 6 - B4 = the prompting control",
+      "§4.1.2 Table 6 - B3 = GraphRAG with full graph indexing (community summaries)",
+      "§5.4 limitations - community-summary indexing is not listed among the limitations",
+      "§4.1.1 - the 770 triplets come from a single extraction run",
+      "§4.2.2 - criterion (i) found five cross-source disagreements",
+      "§4.2.5 - the Gold-Standard false-alarm rate is 1.7%",
+      "§4.2.6 - Gold-Standard recall is 100%",
+      "§4.3.2 - the C1 causal chain has seven steps",
+      "§4.4 - the Self-Auditing layer is exercised on the second crop",
+      "§4.4.2 - deviations <= 0.1 SD at k = 57",
+      "§4.4.2 - the full-corpus value lay 'within the central region'"
+    ]
+  },
+  "audit_implementation": [
+    {
+      "section": "§3.2.1 Table 3",
+      "claim": "T1 = differing quantitative values for the same parameter",
+      "status": "implemented",
+      "note": "criteria (i) and (ii) in detect_all"
+    },
+    {
+      "section": "§3.2.1 Table 3",
+      "claim": "T2 = unit-notation mismatch for the same parameter",
+      "status": "implemented",
+      "note": "pipeline._check_unit_mismatch"
+    },
+    {
+      "section": "§3.2.1 Table 3",
+      "claim": "T3 = apparent contradiction from differing measurement conditions",
+      "status": "implemented",
+      "note": "Algorithm 1 line 7 trigger"
+    },
+    {
+      "section": "§3.2.2",
+      "claim": "criterion (ii) = value outside the Normal Range Table",
+      "status": "implemented",
+      "note": "pipeline._check_numeric_range"
+    },
+    {
+      "section": "§3.2.2",
+      "claim": "only the two reference tables are domain-specific",
+      "status": "EDIT PENDING",
+      "note": "Part 2 prints FIVE domain tables: THRESHOLDS, KNOWN_UNIT_ALIASES, EQUIVALENT_UNITS, UNIT_CONVERSIONS and UNIT_NOTATION_MAP. Say five and list them; the portability claim is weaker but defensible, and five small tables is still a small port - see decision 10"
+    },
+    {
+      "section": "§3.2.2 criterion (i)",
+      "claim": "T1 criterion (i) fires on NON-IDENTICAL values from different sources",
+      "status": "EDIT PENDING",
+      "note": "the code implements NON-OVERLAPPING ranges, which is what Table 3 and §3.4 already imply. Strict non-identity would flag 8.0 against 8.1, and the counts in §4.2.1 follow the non-overlapping rule - see decision 2"
+    },
+    {
+      "section": "Algorithm 1 L5-11",
+      "claim": "the T3 branch is an `else if`, so T3 is tested only when T1 and T2 did not fire",
+      "status": "EDIT PENDING",
+      "note": "the code evaluates T2, T1 and T3 in one pass, which is what the note below the pseudocode already says. Under the else-if reading T3 candidates fall from 34 to 10. Redraw the pseudocode and delete the reconciling note - see decision 3"
+    },
+    {
+      "section": "§3.2.2",
+      "claim": "unit-notation normalisation before comparison",
+      "status": "implemented",
+      "note": "UNIT_NOTATION_MAP, 20 variants"
+    },
+    {
+      "section": "Algorithm 1 L7",
+      "claim": "T3 trigger = condition NULL AND subject in THRESHOLDS",
+      "status": "implemented",
+      "note": "no peer requirement by default"
+    },
+    {
+      "section": "Algorithm 1 L6/L8",
+      "claim": "LLM_Audit(t, flag, d_i) - the auditor receives the source document",
+      "status": "EDIT PENDING",
+      "note": "the auditor is called with the domain thresholds and the corpus peers for the parameter. A single document cannot support a CROSS-SOURCE criterion, so this is not a detail: change the signature to LLM_Audit(t, flag, THRESHOLDS, peers(t, T)) - see decision 4"
+    },
+    {
+      "section": "§3.2.4 Table 4",
+      "claim": "FALSE_ALARM -> Verified; T1/T2 -> Conflicted; T3 -> Disputed",
+      "status": "implemented",
+      "note": "assign_confidence, with a self-test"
+    },
+    {
+      "section": "§3.2.4 Definition 1",
+      "claim": "D(t) takes a single value from {none, T1, T2, T3}",
+      "status": "EDIT PENDING",
+      "note": "detection is multi-label - confirmed_types is a SET - and Table 4 has no row for a triplet confirmed T1 and T3 at once. Restate Definition 1 over the set (any confirmed T1 or T2 -> Conflicted; else any confirmed T3 -> Disputed; else Verified) and add the combined row - decision 5"
+    },
+    {
+      "section": "§3.3",
+      "claim": "two nodes per triplet joined by a directed predicate edge",
+      "status": "implemented",
+      "note": "pipeline.KnowledgeGraph.add_triplet"
+    },
+    {
+      "section": "§3.3",
+      "claim": "parallel edges preserved rather than overwritten",
+      "status": "implemented",
+      "note": "one edge per triplet, no de-duplication"
+    },
+    {
+      "section": "§3.3",
+      "claim": "edges annotated with the Confidence Level",
+      "status": "PARTIAL",
+      "note": "relational edges carry the audited level; causal edges come from causal_relations.json, which the detector never sees, so they are Verified by construction - see decision 12"
+    },
+    {
+      "section": "§3.3",
+      "claim": "stored in Neo4j 5.x",
+      "status": "PARTIAL",
+      "note": "in-memory graph; pipeline.export_for_neo4j emits the Cypher"
+    },
+    {
+      "section": "§3.4",
+      "claim": "query terms matched to entity and parameter nodes",
+      "status": "implemented",
+      "note": "match_nodes, with the parameter-synonym map added in Part 8; before that map no query reached a parameter node - see decision 11"
+    },
+    {
+      "section": "§3.4",
+      "claim": "connected CAUSAL edges traversed outward",
+      "status": "implemented",
+      "note": "causal_paths restricts traversal to causal edges"
+    },
+    {
+      "section": "§3.4",
+      "claim": "Confidence Level propagated along the path",
+      "status": "implemented",
+      "note": "path_confidence = weakest edge on the path"
+    },
+    {
+      "section": "§3.4",
+      "claim": "Disputed/Conflicted paths trigger an explicit uncertainty warning",
+      "status": "implemented",
+      "note": "the note appended by retrieve() for B5"
+    },
+    {
+      "section": "§3.5 judge panel",
+      "claim": "three heterogeneous judges, two vendors plus one open-weight",
+      "status": "PARTIAL",
+      "note": "the panel is heterogeneous, but not the models §3.5 names. The judges that actually scored this run are J1 = gpt-4o, J2 = claude-sonnet-4-6, J3 = meta-llama-3.1-8b-instruct. The open-weight judge (J3) is served LOCALLY through an OpenAI-compatible endpoint because the 70B model the recorded study used was withdrawn from its provider's free and developer tiers on 2026-08-16; open weights served locally cannot be deprecated out of a deposit. §3.5 must name exactly these model ids and say that J3 is run locally - REPLACEMENT TEXT: \"the panel comprised J1 = gpt-4o, J2 = claude-sonnet-4-6, J3 = meta-llama-3.1-8b-instruct, the last (meta-llama-3.1-8b-instruct) served locally from open weights through an OpenAI-compatible endpoint\""
+    },
+    {
+      "section": "§3.5 primary rubric",
+      "claim": "three criteria scored 1-5 (FA, CV, AC), overall mean reported",
+      "status": "implemented",
+      "note": "unchanged from the manuscript: the overall mean is the arithmetic mean of FA, CV and AC over every judge and query. No fourth criterion enters it, so Table 11 remains comparable with the recorded study"
+    },
+    {
+      "section": "§3.5 UR rubric",
+      "claim": "uncertainty reporting is not among the scored criteria",
+      "status": "EDIT PENDING",
+      "note": "a fourth criterion, UR, is added as a SEPARATE pass with its own rubric, restricted to the queries whose retrieved evidence carries a confirmed disagreement. It is reported beside the primary rubric (3 + 1), never averaged into it. FA/CV/AC cannot register what the auditing layer does, which is why B5 - B3 is null on the primary rubric and positive on UR; §3.5 must describe UR as a second, restricted rubric and say so"
+    },
+    {
+      "section": "§3.4",
+      "claim": "the uncertainty warning names the items it warns about",
+      "status": "implemented",
+      "note": "graded items are held back from the retrieval limit rather than sorted to the end of it; before that fix the note told the generator a disagreement existed on 5 of 14 queries while showing none of it"
+    },
+    {
+      "section": "§4.1.2 generation control",
+      "claim": "the four conditions differ only in retrieval and the confidence layer",
+      "status": "EDIT PENDING",
+      "note": "the submitted text describes FOUR conditions; this run has FIVE. B4, a prompting control that receives B3's retrieval and an instruction to report disagreement instead of the Confidence Levels, did not exist when the manuscript was written and must be added to §4.1.2 and Table 6. The conditions no longer differ by retrieval and the confidence layer alone: B3, B4 and B5 share one retrieval and differ only in what the generator is TOLD, which is what makes B5 - B4 an comparison that is not an ablation, rather than another one. Separately, COMMON_RULE is appended verbatim to all FIVE system prompts - answer from the supplied evidence only, no prior-knowledge advice, at most 150 words, no padding - and that control is not in the submitted text either: without it answer length correlated with the judge score at r = 0.66 in the recorded evaluation and the longest-answer condition won on presentation alone"
+    },
+    {
+      "section": "§4.1.2 Table 6",
+      "claim": "B4 = the prompting control",
+      "status": "EDIT PENDING",
+      "note": "absent from the submitted Table 6, which predates it. B4 is B3's retrieval with no Confidence Levels shown and an instruction to look for disagreement and report it, written to be as strong as B5's. Call it a PROMPTING CONTROL, not an external baseline: it uses this system's own retrieval and is not an independent published method. What it adds is the only comparison that is not an ablation - B1-B3 are all this system with a component removed - so without it the referee question 'would an instruction have done the same?' is unanswered"
+    },
+    {
+      "section": "§4.1.2 Table 6",
+      "claim": "B2 = single-hop KG-RAG",
+      "status": "implemented",
+      "note": "one-hop neighbours of the matched nodes"
+    },
+    {
+      "section": "§4.1.2 Table 6",
+      "claim": "B3 = GraphRAG with full graph indexing (community summaries)",
+      "status": "EDIT PENDING",
+      "note": "no condition builds community summaries. The code implements B3 as multi-hop KG-RAG without the auditing layer. Rewrite Table 6 from BASELINE_SPEC and rename B3 away from 'GraphRAG', or B3 < B2 reads as evidence against GraphRAG's indexing - a claim this study is not designed to support - see decision 6"
+    },
+    {
+      "section": "§4.1.2 Table 6",
+      "claim": "B5 = B3 plus the full Self-Auditing pipeline",
+      "status": "implemented",
+      "note": "B3 and B5 share one retrieval call and differ only in whether the Confidence Levels are shown, so B5 - B3 is a clean ablation of the auditing layer - see decision 13"
+    },
+    {
+      "section": "§5.4 limitations",
+      "claim": "community-summary indexing is not listed among the limitations",
+      "status": "EDIT PENDING",
+      "note": "GraphRAG's community-summary indexing was not implemented in any condition. §5.4 must say so; without it B3 is readable as a full GraphRAG reimplementation - see decision 6"
+    },
+    {
+      "section": "§4.1.1",
+      "claim": "the 770 triplets come from a single extraction run",
+      "status": "EDIT PENDING",
+      "note": "two passes, 405 then 365, merged. A two-stage extraction is unremarkable; not describing it is what a reviewer objects to - see decision 17"
+    },
+    {
+      "section": "§4.2.2",
+      "claim": "criterion (i) found five cross-source disagreements",
+      "status": "CLAIM NOT SUPPORTED",
+      "note": "the rule stage raises 18 flags and the context audit confirms 7. Neither is five, and neither is fixed: the auditor is not deterministic. State both figures with the stage each belongs to - see decision 18"
+    },
+    {
+      "section": "§4.2.5",
+      "claim": "the Gold-Standard false-alarm rate is 1.7%",
+      "status": "CLAIM NOT SUPPORTED",
+      "note": "the rule stage flags 3 of 60 (5.0%) and 2 of 60 (3.3%) survive the context audit. Report both and name the stage each belongs to; the drop is the second stage doing exactly what it exists for - see decision 15"
+    },
+    {
+      "section": "§4.2.6",
+      "claim": "Gold-Standard recall is 100%",
+      "status": "CLAIM NOT SUPPORTED",
+      "note": "recall at tau = 0.5 is 90.0%. State the threshold, and say the metric measures surface overlap with the nearest corpus string, not semantic recall; Part 7 prints the whole curve - see decision 16"
+    },
+    {
+      "section": "§4.3.2",
+      "claim": "the C1 causal chain has seven steps",
+      "status": "CLAIM NOT SUPPORTED",
+      "note": "the longest SIMPLE causal chain the graph supports is 4 hops. The seven came from traverse_causal_chain, a breadth-first walk with a global visited set that revisits nodes and counts each revisit as a step - see decision 19"
+    },
+    {
+      "section": "§4.2.4",
+      "claim": "the auditor judges the corrupted triplet in context",
+      "status": "implemented",
+      "note": "corpus-referenced protocol primary; oracle protocol separate"
+    },
+    {
+      "section": "§4.4.1",
+      "claim": "76 papers, 8 parameters, k = 19/38/57/76, 100 draws",
+      "status": "implemented",
+      "note": "one fixed draw plan shared by every analysis"
+    },
+    {
+      "section": "§4.4",
+      "claim": "the Self-Auditing layer is exercised on the second crop",
+      "status": "PARTIAL",
+      "note": "audit_corpus runs with do_audit=False and the cached Confidence Levels enter only as aggregation weights; the generalisation claim is about the extraction-and-aggregation pipeline - see decision 14"
+    },
+    {
+      "section": "§4.4.2",
+      "claim": "four aggregators and three normalizers",
+      "status": "implemented",
+      "note": "trimming proportion is not stated in the paper; fixed and recorded"
+    },
+    {
+      "section": "§4.4.2",
+      "claim": "deviations <= 0.1 SD at k = 57",
+      "status": "CLAIM NOT SUPPORTED",
+      "note": "measured maximum is 0.30 SD (DO); 6 of 8 parameters are at or below 0.1 SD and 8 of 8 below 1.0 SD at k = 57. Replacement wording in audit B, decision 9 - the manuscript sentence must be edited"
+    },
+    {
+      "section": "§4.4.2",
+      "claim": "the full-corpus value lay 'within the central region'",
+      "status": "EDIT PENDING",
+      "note": "'central region' is never defined numerically, so as written it is not an auditable claim. The code reports mean |z| and max |z| and invents no interval criterion; three concrete readings are printed as diagnostics and one must be adopted - see decision 8"
+    }
+  ],
+  "decisions": [
+    {
+      "location": "§3.2.2 worked example",
+      "conflict": "criterion (i) is named cross-source, but the example compares DO 8 mg/L (S01) with 6 mg/L (S01) and both values carry a condition",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Replace the example with a cross-source, unconditioned pair. Table 3's 'water temp. 13-15 C vs 17-20 C (cross-source)' already qualifies."
+    },
+    {
+      "location": "§3.2.2 criterion (i) rule",
+      "conflict": "the text says NON-IDENTICAL values; Table 3 and §3.4 imply non-overlapping ranges",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "State the rule as non-overlapping ranges. Strict non-identity would flag 8.0 against 8.1; the code implements non-overlapping and the counts in §4.2.1 follow it."
+    },
+    {
+      "location": "Algorithm 1, lines 5-11",
+      "conflict": "the pseudocode makes the T3 branch an `else if`; the note below says all three types are detected in a single call",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Redraw the pseudocode so T2, T1 and T3 are all evaluated, and delete the reconciling note. Under the else-if reading T3 candidates fall from 34 to 10."
+    },
+    {
+      "location": "Algorithm 1, lines 6 and 8",
+      "conflict": "LLM_Audit is written as receiving the source document d_i; the auditor actually receives the domain thresholds and the corpus peers for the parameter",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Change the call to LLM_Audit(t, flag, THRESHOLDS, peers(t, T)). Corpus-wide context is also the correct input for a cross-source criterion; a single document cannot support it."
+    },
+    {
+      "location": "§3.2.4 Definition 1",
+      "conflict": "D(t) is written as a single value from {none, T1, T2, T3}, but multi-label detection makes it a set and Table 4 has no row for a triplet flagged T1 and T3 at once",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Restate over the set of confirmed types: any confirmed T1 or T2 -> Conflicted; else any confirmed T3 -> Disputed; else Verified. Add the combined row to Table 4."
+    },
+    {
+      "location": "§4.1.2 Table 6, baseline naming",
+      "conflict": "B3 is defined as GraphRAG with full graph indexing (community summaries); no condition builds community summaries",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Rewrite Table 6 from BASELINE_SPEC (Part 8): B2 single-hop KG-RAG, B3 multi-hop KG-RAG without auditing, B5 multi-hop with Self-Auditing. Rename B3 away from 'GraphRAG' so it cannot be read as a full reimplementation of that method. Note in §5.4 that GraphRAG's community-summary indexing was not implemented. Rationale: under the old definition B5 inherits community summaries too, so B3 < B2 would read as evidence against GraphRAG's indexing, which this study is not designed to support; under the new one it is the paper's own thesis. Implementing it would also void the recorded Table 11."
+    },
+    {
+      "location": "§4.3.2 case study C1",
+      "conflict": "the quoted B5 response is a seven-step chain; the recorded B5 answer for that query reports that the graph held no direct evidence",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Label the quoted response an illustration regenerated from the audited graph and state that it was not scored. Then check it against Part 10's output before quoting: the regenerated answer describes parallel mechanisms rather than one linear seven-step chain, so claim what the run shows - multi-hop retrieval spanning several source documents with per-path Confidence Levels - and quote the longest chain the graph supports as retrieval evidence, separately from the generated text."
+    },
+    {
+      "location": "§4.4.2 'central region'",
+      "conflict": "the phrase is never defined, so an interval-coverage claim is made against a criterion that was never specified",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Do not invent a criterion. Drop the interval-coverage wording and report the statistics actually computed: mean |z| = 0.40 and max |z| = 0.81, i.e. every parameter lies within one subset standard deviation of the subset mean. The |z| < 1, central 80% and empirical 95% coverages (8/8 in all three) stay in the Supplementary Material as diagnostics."
+    },
+    {
+      "location": "§4.4.2 sufficiency criterion",
+      "conflict": "'deviations remaining below one data-standard-deviation (<= 0.1 SD at k = 57)' treats 0.1 SD as an upper bound for every parameter, which this run contradicts: measured maximum is 0.30 SD (DO); 6 of 8 parameters are at or below 0.1 SD and 8 of 8 below 1.0 SD at k = 57",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Replace the sentence with the measured figures printed in Part 11. Verbatim replacement: \"all 8 parameters remain below one data standard deviation at k = 57 (maximum 0.30 SD, for DO), and 6 of 8 are at or below 0.1 SD\". Do not keep 0.1 SD as a bound; it holds for most parameters, not all."
+    },
+    {
+      "location": "§3.2.2 'the two reference tables'",
+      "conflict": "five tables are domain-specific, not two: the Normal Range Table, the unit-alias table, the equivalent-unit pairs, the unit-conversion table and the notation map",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Say five, and list them. Part 2 prints all five. The claim that porting the method costs only two tables is the weaker one to defend; the honest count is still small."
+    },
+    {
+      "location": "§3.4 retrieval reaching the auditing layer",
+      "conflict": "before the parameter-synonym map no query matched a parameter node, so no answer carried a Confidence Level and B5 was identical to B3 in substance; and until graded items were held back from the retrieval limit, 5 of the 14 queries with a disagreement showed the generator a warning without the items it warned about",
+      "side": "CODE (already fixed)",
+      "manuscript_edit": "Part 8 adds PARAM_SYNONYMS, pulls the relational edges of the parameters a causal chain touches, and spends the retrieval budget on graded items first. Table 11 and every judge figure have been regenerated on the corrected retrieval; the recorded evaluation is retained as an input file and is not reported."
+    },
+    {
+      "location": "§3.3 Confidence Level on causal edges",
+      "conflict": "causal edges are loaded from causal_relations.json and never pass the detector, so their Verified label is a default, not an audit result",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "State that the Confidence Level is assigned to the relational (measurement) edges and propagated along causal paths, and that causal edges themselves are not audited in this study. Do not claim every edge carries an audited level."
+    },
+    {
+      "location": "§4.1.2 B3 vs B5",
+      "conflict": "B3 and B5 issue the same retrieval and differ only in whether the audited Confidence Levels are shown to the generator",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Describe B5 - B3 as an ablation of the auditing layer alone. That is a stronger claim than a general system comparison, and it is what the code implements."
+    },
+    {
+      "location": "§4.4 the second crop",
+      "conflict": "the strawberry analysis aggregates with do_audit=False; the auditing layer does not run on that corpus, and the cached Confidence Levels act only as aggregation weights",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Scope the generalisation claim to the extraction-and-aggregation pipeline under sparsity. Do not claim the conflict detector was validated on a second crop."
+    },
+    {
+      "location": "§4.2.5 Gold-Standard false-alarm rate",
+      "conflict": "the rule stage flags 3 of 60 Gold triplets (5.0%); after the context audit 2 of 60 survive (3.3%). The mechanism is that criterion (ii) compares against the Normal Range Table without reading the triplet's condition field",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Report both numbers and name the stage each belongs to. Explaining the mechanism is the point: it is exactly the case the second stage exists to catch."
+    },
+    {
+      "location": "§4.2.6 Gold-Standard recall",
+      "conflict": "recall at tau = 0.50 is 90.0% (54/60), not 100%. Five of the six misses differ from the corpus only in predicate wording; one (GS-048) is a genuine extraction miss",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Report 90.0% with the threshold stated, and say what the metric measures - surface overlap between the Gold string and the nearest corpus string, not semantic recall. Part 7 prints the full recall-versus-threshold curve (Figure F5, Table T8)."
+    },
+    {
+      "location": "§4.1.1 corpus construction",
+      "conflict": "the 770 triplets were extracted in two passes - 405 then 365 - and merged, not in a single run",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Describe both passes and the merge. A two-stage extraction is unremarkable; not describing it is what a reviewer would object to."
+    },
+    {
+      "location": "§4.2.2 'five cross-source disagreements'",
+      "conflict": "criterion (i) raises 18 flags at the rule stage, of which the context audit confirms 7. Neither figure is fixed: the auditor is not deterministic, and across the five repeat runs of Part 4 the confirmed count moves with the Confidence Level distribution",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Do not quote a bare count as though it were a property of the method. State the rule-stage figure and the confirmed figure with the stage each belongs to, both taken from the deposited run, and say that the confirmed count is auditor-dependent."
+    },
+    {
+      "location": "§4.3.2 'seven-step causal chain'",
+      "conflict": "the longest SIMPLE causal chain the graph supports is 4 hops. The 7 in the manuscript came from pipeline.traverse_causal_chain, a breadth-first walk with a global visited set: it revisits nodes and counts each revisit as a step, so its 'chains' are not paths and its hop counts are inflated",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Delete 'seven-step' everywhere it appears. Quote 4 hops and the hop histogram Part 8 prints ({1: 374, 2: 75, 3: 18, 4: 3}); Table T9 carries both. Part 10 also prints the longest chain actually RETRIEVED for C1, which is the number to quote if the sentence is about the case study rather than about the graph. Note that entity fragmentation (DO_low, low_DO, DO_decrease as separate nodes) is what caps the depth; that is a limitation to state in §5.4, not a number to inflate."
+    },
+    {
+      "location": "§4.4.2 aggregation weights",
+      "conflict": "CONF_WEIGHT is uniform in the deposited configuration, so the weighted median equals the plain median on this corpus",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Either state that the weights were uniform in this run, or report the weighted and unweighted estimates side by side. Part 11 prints both."
+    },
+    {
+      "location": "§4.4.2 closed-book control",
+      "conflict": "the control asks the model for eight parameter values without documents; it is a yardstick for comparing two estimators, not a validation of either",
+      "side": "MANUSCRIPT",
+      "manuscript_edit": "Keep the framing the notebook uses: the internal reference is the full corpus; the literature column is context only."
+    }
+  ],
+  "finished_utc": "2026-09-07T07:08:10.380279+00:00",
+  "strict_disclosure": {
+    "levels": {
+      "S1": {
+        "counts": {
+          "B3": 0,
+          "B4": 1,
+          "B5": 10
+        },
+        "n": 14,
+        "raw": {
+          "B5>B3": 0.0009765625,
+          "B5>B4": 0.001953125,
+          "B4>B3": 0.5
+        },
+        "holm": {
+          "B5>B3": 0.0029296875,
+          "B5>B4": 0.00390625,
+          "B4>B3": 0.5
+        }
+      },
+      "S2": {
+        "counts": {
+          "B3": 0,
+          "B4": 0,
+          "B5": 9
+        },
+        "n": 14,
+        "raw": {
+          "B5>B3": 0.001953125,
+          "B5>B4": 0.001953125
+        },
+        "holm": {
+          "B5>B3": 0.00390625,
+          "B5>B4": 0.00390625
+        }
+      },
+      "S3": {
+        "counts": {
+          "B3": 0,
+          "B4": 0,
+          "B5": 9
+        },
+        "n": 14,
+        "raw": {
+          "B5>B3": 0.001953125,
+          "B5>B4": 0.001953125
+        },
+        "holm": {
+          "B5>B3": 0.00390625,
+          "B5>B4": 0.00390625
+        }
+      }
+    },
+    "n_disputed": 14,
+    "n_eligible": 14,
+    "definition": "S1 disagreement vocabulary; S2 also >= 2 distinct values reported for one flagged parameter in the retrieved evidence; S3 also names that parameter. Judge-free, but the disputed set and the value sets are supplied by the audit under test, so NOT model-independent."
+  },
+  "disclosure_corrections": {
+    "s1_negation_corrected": {
+      "B3": 0,
+      "B4": 0,
+      "B5": 9
+    },
+    "on_topic_queries": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      15,
+      17,
+      19
+    ],
+    "off_topic_queries": [],
+    "s2_on_topic": {
+      "B3": 0,
+      "B4": 0,
+      "B5": 9
+    },
+    "n_disputed": 14
+  },
+  "retrieval_control_check": {
+    "queries": 20,
+    "identical_item_set": 20,
+    "identical_item_sequence": 20,
+    "mismatched_queries": [],
+    "note": "B3 vs B5 after stripping the Confidence Level annotation; B4 shares B3's retrieval configuration by construction."
+  },
+  "confirmatory_family": {
+    "n_tests": 5,
+    "raw": {
+      "UR B5>B3": 0.003347741348960182,
+      "UR B5>B4": 0.042915479222142824,
+      "UR B4>B3": 0.028902004796591784,
+      "disclosure B5>B3": 0.001953125,
+      "disclosure B5>B4": 0.001953125
+    },
+    "holm": {
+      "disclosure B5>B3": 0.009765625,
+      "disclosure B5>B4": 0.009765625,
+      "UR B5>B3": 0.010043224046880546,
+      "UR B4>B3": 0.05780400959318357,
+      "UR B5>B4": 0.05780400959318357
+    },
+    "disclosure_measure": "S2",
+    "definition": "three UR comparisons among B3/B4/B5 and two judge-free specific-disclosure comparisons (S2), adjusted jointly by Holm-Bonferroni"
+  },
+  "t3_cap_diagnostic": {
+    "n_t3_candidates": 34,
+    "n_gate_fired": 7,
+    "n_genuine_single_source": 2,
+    "n_truncated_by_cap": 5,
+    "genuine_ids": [
+      "EXT-0388",
+      "EXT-0389"
+    ],
+    "verdicts": {
+      "EXT-0496": {
+        "subject": "VPD",
+        "unit": "kPa",
+        "predicate": "upper_limit",
+        "object": "2.0",
+        "source_id": "S12",
+        "uncapped_sources": 2,
+        "audit_action": "clear",
+        "final_conflict": null,
+        "audit_log": "The flagged value from Taylor et al. 2025 is an upper limit for VPD in wasabi hydroponic cultivation, expressed in kPa. The comparison values from the S11 source are expressed in hPa and are specific to environmental conditions in various locations in Shizuoka prefecture, which are not directly comparable to a general cultivation recommendation. The only comparison value in kPa is from Langenfeld "
+      },
+      "EXT-0654": {
+        "subject": "growth_medium_temp",
+        "unit": "°C",
+        "predicate": "optimal_range",
+        "object": "12~13",
+        "source_id": "S15",
+        "uncapped_sources": 3,
+        "audit_action": "clear",
+        "final_conflict": null,
+        "audit_log": "The flagged value from Tanaka et al. 2009 is an 'optimal_range' for growth medium temperature, which is a general recommendation. The comparison values from 'S03-Effects of Environmental Controls on the Growth of Wasabi.pdf' and Sultana et al. 2003 are specific experimental conditions or measurements under various scenarios (e.g., night in winter, day-time in summer, axillary bud development). The"
+      },
+      "EXT-0655": {
+        "subject": "growth_medium_temp",
+        "unit": "°C",
+        "predicate": "upper_limit",
+        "object": "18",
+        "source_id": "S15",
+        "uncapped_sources": 3,
+        "audit_action": "clear",
+        "final_conflict": null,
+        "audit_log": "The flagged value of 18 °C as an upper limit for growth medium temperature from Tanaka et al. 2009 is not directly comparable to the other values because they are reported under specific conditions that are not necessarily equivalent to a general upper limit. The comparison values are specific to conditions like 'night in winter', 'day-time in summer', or specific growth stages like 'whole plant v"
+      },
+      "EXT-0659": {
+        "subject": "growth_medium_temp",
+        "unit": "°C",
+        "predicate": "set_value",
+        "object": "13",
+        "source_id": "S15",
+        "uncapped_sources": 3,
+        "audit_action": "clear",
+        "final_conflict": null,
+        "audit_log": "The flagged value of 13 °C from Tanaka et al. 2009 is a set value for growth medium temperature without a specified condition. The comparison values from 'S03-Effects of Environmental Controls on the Growth of Wasabi.pdf' provide specific conditions such as 'night in summer', 'day-time in winter', and 'main stem growth', which are not directly comparable to a general set value without conditions. "
+      },
+      "EXT-0663": {
+        "subject": "growth_medium_temp",
+        "unit": "°C",
+        "predicate": "set_value",
+        "object": "20",
+        "source_id": "S15",
+        "uncapped_sources": 3,
+        "audit_action": "clear",
+        "final_conflict": null,
+        "audit_log": "The flagged value of 20 °C from Tanaka et al. 2009 is a set value for growth medium temperature. The comparison values from S03-Effects of Environmental Controls on the Growth of Wasabi.pdf and Sultana et al. 2003 provide specific conditions such as 'night in winter', 'day-time in summer', 'whole plant vegetative growth', etc. These are specific experimental conditions or environmental controls, n"
+      }
+    },
+    "n_would_be_confirmed": 0,
+    "would_be_confirmed_ids": []
+  }
+}

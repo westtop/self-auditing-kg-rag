@@ -1,0 +1,2162 @@
+[
+ {
+  "judge": "J1",
+  "query": 1,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 1,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 1,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 1,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 2,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 2,
+  "AC": 2,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J1",
+  "query": 2,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 2,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 2,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 3,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 3,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J1",
+  "query": 3,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 3,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 4,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 4,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 4,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 4,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 5,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 5,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 5,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 5,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 6,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J1",
+  "query": 6,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 6,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J1",
+  "query": 6,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 7,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J1",
+  "query": 7,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 7,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 7,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 8,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 8,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 8,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 8,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 9,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J1",
+  "query": 9,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 9,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 9,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 10,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 2,
+  "AC": 2,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J1",
+  "query": 10,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 10,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 10,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J1",
+  "query": 11,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 11,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 11,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 11,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 12,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J1",
+  "query": 12,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 4,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J1",
+  "query": 12,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 12,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J1",
+  "query": 13,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 13,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J1",
+  "query": 13,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J1",
+  "query": 13,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 14,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J1",
+  "query": 14,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 14,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 14,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 15,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 15,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J1",
+  "query": 15,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 15,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 16,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 16,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 16,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 16,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 17,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 17,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 17,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 17,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 18,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J1",
+  "query": 18,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J1",
+  "query": 18,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J1",
+  "query": 18,
+  "baseline": "B4",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 19,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J1",
+  "query": 19,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 19,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 19,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 20,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J1",
+  "query": 20,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J1",
+  "query": 20,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J1",
+  "query": 20,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 5,
+  "AC": 4,
+  "mean": 4.3333
+ },
+ {
+  "judge": "J2",
+  "query": 1,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 1,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 2,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 1,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J2",
+  "query": 1,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 2,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 2,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 3,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 2,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 2,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 3,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J2",
+  "query": 3,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J2",
+  "query": 3,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 3,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 4,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 1,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J2",
+  "query": 4,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J2",
+  "query": 4,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 4,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 5,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 5,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J2",
+  "query": 5,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J2",
+  "query": 5,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.3333
+ },
+ {
+  "judge": "J2",
+  "query": 6,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 6,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 2,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 6,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 6,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 7,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 7,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 7,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 7,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 4,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 8,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 8,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 8,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J2",
+  "query": 8,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J2",
+  "query": 9,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 9,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 3,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 9,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 1,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J2",
+  "query": 9,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 10,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 10,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 10,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 10,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 11,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J2",
+  "query": 11,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 11,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 11,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 12,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 2,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J2",
+  "query": 12,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 12,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 12,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 13,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J2",
+  "query": 13,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 13,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 13,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 14,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 14,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 14,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 14,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 5,
+  "AC": 4,
+  "mean": 4.3333
+ },
+ {
+  "judge": "J2",
+  "query": 15,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 1,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J2",
+  "query": 15,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J2",
+  "query": 15,
+  "baseline": "B3",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 15,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 16,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 1,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J2",
+  "query": 16,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 16,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 16,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 17,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 17,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J2",
+  "query": 17,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 17,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 4,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J2",
+  "query": 18,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J2",
+  "query": 18,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J2",
+  "query": 18,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J2",
+  "query": 18,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J2",
+  "query": 19,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 2,
+  "AC": 1,
+  "mean": 1.3333
+ },
+ {
+  "judge": "J2",
+  "query": 19,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J2",
+  "query": 19,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 19,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J2",
+  "query": 20,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J2",
+  "query": 20,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J2",
+  "query": 20,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.0
+ },
+ {
+  "judge": "J2",
+  "query": 20,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 1,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J3",
+  "query": 1,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 1,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J3",
+  "query": 1,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 2,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J3",
+  "query": 2,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 1,
+  "AC": 4,
+  "mean": 3.0
+ },
+ {
+  "judge": "J3",
+  "query": 2,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 1,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 2,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 3,
+  "baseline": "B1",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 3,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 3,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 3,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 4,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 4,
+  "AC": 2,
+  "mean": 3.0
+ },
+ {
+  "judge": "J3",
+  "query": 4,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 4,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 3,
+  "AC": 3,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J3",
+  "query": 4,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 5,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 5,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 5,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 5,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 6,
+  "baseline": "B1",
+  "FA": 1,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.0
+ },
+ {
+  "judge": "J3",
+  "query": 6,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 6,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 6,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 7,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 7,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 7,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 7,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 8,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 8,
+  "baseline": "B2",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J3",
+  "query": 8,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 8,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 9,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 1,
+  "AC": 1,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J3",
+  "query": 9,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 9,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 9,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 10,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.0
+ },
+ {
+  "judge": "J3",
+  "query": 10,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 4,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 10,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 10,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 5,
+  "mean": 4.3333
+ },
+ {
+  "judge": "J3",
+  "query": 11,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 11,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 11,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 11,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 12,
+  "baseline": "B1",
+  "FA": 4,
+  "CV": 3,
+  "AC": 2,
+  "mean": 3.0
+ },
+ {
+  "judge": "J3",
+  "query": 12,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 12,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 12,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 13,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 13,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 13,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 13,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ },
+ {
+  "judge": "J3",
+  "query": 14,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 14,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 14,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 14,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 5,
+  "AC": 3,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 15,
+  "baseline": "B1",
+  "FA": 4,
+  "CV": 4,
+  "AC": 2,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J3",
+  "query": 15,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 15,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 15,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 4,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J3",
+  "query": 16,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 16,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 2,
+  "mean": 3.0
+ },
+ {
+  "judge": "J3",
+  "query": 16,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 16,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 5,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J3",
+  "query": 17,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 17,
+  "baseline": "B2",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 17,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 4,
+  "AC": 2,
+  "mean": 3.0
+ },
+ {
+  "judge": "J3",
+  "query": 17,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 5,
+  "AC": 4,
+  "mean": 4.3333
+ },
+ {
+  "judge": "J3",
+  "query": 18,
+  "baseline": "B1",
+  "FA": 2,
+  "CV": 1,
+  "AC": 2,
+  "mean": 1.6667
+ },
+ {
+  "judge": "J3",
+  "query": 18,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 3,
+  "AC": 2,
+  "mean": 3.0
+ },
+ {
+  "judge": "J3",
+  "query": 18,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 4,
+  "AC": 2,
+  "mean": 3.3333
+ },
+ {
+  "judge": "J3",
+  "query": 18,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 19,
+  "baseline": "B1",
+  "FA": 3,
+  "CV": 2,
+  "AC": 2,
+  "mean": 2.3333
+ },
+ {
+  "judge": "J3",
+  "query": 19,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 19,
+  "baseline": "B3",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 19,
+  "baseline": "B4",
+  "FA": 4,
+  "CV": 5,
+  "AC": 5,
+  "mean": 4.6667
+ },
+ {
+  "judge": "J3",
+  "query": 20,
+  "baseline": "B1",
+  "FA": 4,
+  "CV": 4,
+  "AC": 3,
+  "mean": 3.6667
+ },
+ {
+  "judge": "J3",
+  "query": 20,
+  "baseline": "B2",
+  "FA": 4,
+  "CV": 4,
+  "AC": 4,
+  "mean": 4.0
+ },
+ {
+  "judge": "J3",
+  "query": 20,
+  "baseline": "B3",
+  "FA": 3,
+  "CV": 3,
+  "AC": 2,
+  "mean": 2.6667
+ },
+ {
+  "judge": "J3",
+  "query": 20,
+  "baseline": "B4",
+  "FA": 5,
+  "CV": 5,
+  "AC": 5,
+  "mean": 5.0
+ }
+]
