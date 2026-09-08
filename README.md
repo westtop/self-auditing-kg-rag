@@ -1,5 +1,7 @@
 # Self-Auditing KG-RAG — reproduction package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22654812.svg)](https://doi.org/10.5281/zenodo.22654812)
+
 Reproduction package for the paper *Auditing the Evidence, Not the Answer: Making
 Literature Disagreement Visible in Knowledge-Graph RAG*.
 
