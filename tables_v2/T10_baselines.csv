@@ -1,0 +1,8 @@
+﻿id,label,retrieval,multi_hop,community_summaries,confidence_shown
+B1,Naive RAG,"TF-IDF over raw PDF text chunks, top 5",False,False,False
+B2,Single-hop KG-RAG,"knowledge graph, one-hop neighbours of the matched nodes",False,False,False
+B3,Multi-hop KG-RAG without auditing,"knowledge graph, multi-hop simple paths over causal edges",True,False,False
+B4,Multi-hop KG-RAG + self-assessment prompt (control),identical to B3 and B5,True,False,False
+B5,Multi-hop KG-RAG with Self-Auditing (proposed),identical to B3,True,False,True
+
+# no condition implements community-summary indexing

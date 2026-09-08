@@ -1,0 +1,6 @@
+﻿conflict_type,flags_raised,confirmed,confirmation_rate
+T1,68,31,45.6%
+T2,65,12,18.5%
+T3_candidate,34,1,2.9%
+
+"# 133 triplets flagged, 167 flags; T1 by criterion {'range_violation': 50, 'cross_source_disagreement': 18}"

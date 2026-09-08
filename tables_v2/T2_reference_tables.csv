@@ -1,0 +1,13 @@
+﻿parameter,min,max,canonical_unit,aliases
+water_temp,5,20,°C,°C; °F
+growth_medium_temp,5,23,°C,°C; °F
+air_temp,5,30,°C,°C; °F
+pH,5.5,7.5,(dimensionless),
+DO,6,14,mg/L,mg/L; ppm
+EC,0.05,3.7,dS/m,dS/m; mS/cm; μS/cm
+PPF,50,300,μmol/m²/s,μmol/m²/s; lux
+PPFD,50,900,μmol/m²/s,μmol/m²/s; lux
+photoperiod,8,16,hours,hours; minutes
+VPD,0.3,2.5,kPa,kPa; Pa
+
+"# 35 unit conversions, 20 notation variants normalised before comparison"
