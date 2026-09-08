@@ -1,0 +1,15 @@
+﻿comparison,raw_p,holm_p,significant
+B5>B1 [CV],0.000382,0.00344,yes
+B5>B2 [CV],0.00113,0.00901,yes
+B5>B1 [FA],0.00126,0.00901,yes
+B5>B1 [AC],0.0024,0.0144,yes
+B5>B2 [FA],0.0126,0.0632,no
+B5>B2 [AC],0.0147,0.0632,no
+B5>B3 [CV],0.422,1,no
+B5>B3 [FA],0.838,1,no
+B5>B3 [AC],0.939,1,no
+B5>B1,0.000735,0.00221,yes
+B5>B2,0.00373,0.00747,yes
+B5>B3,0.783,0.783,no
+
+"# Wilcoxon signed-rank, one-sided, method=approx; Holm within family"

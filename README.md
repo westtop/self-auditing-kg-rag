@@ -1,67 +1,97 @@
-# Self-Auditing KG-RAG
+# Self-Auditing KG-RAG — reproduction package
 
-Reproducibility materials for **“Auditing the Evidence, Not the Answer: Evidence-Level Conflict Detection Makes Literature Disagreement Visible in Knowledge-Graph RAG.”**
+Reproduction package for the paper *Auditing the Evidence, Not the Answer: Making
+Literature Disagreement Visible in Knowledge-Graph RAG*.
 
-## Overview
+## What this is
 
-This repository contains the code, extracted evidence, audit outputs, generated answers, evaluation scores, tables, and figures used in the study.
+The pipeline detects disagreements between reported parameter values in a small
+agricultural literature, audits each flagged pair, attaches a categorical
+Confidence Level (Verified / Disputed / Conflicted) to the evidence, and shows
+those levels to the generator at answer time. This repository reproduces every
+table and figure reported in the paper.
 
-The study evaluates **Self-Auditing KG-RAG**, a knowledge-graph RAG pipeline that audits conflicts among evidence items before generation and exposes the resulting Confidence Levels to the generator.
+## Layout
 
-## Repository contents
+Everything lives in the repository root, so the notebook resolves its three data
+folders to `.` with no configuration.
 
-- `Reproduce_SelfAuditingGraphRAG_v2.ipynb` — main reproduction notebook.
-- `pipeline.py` — conflict detection, auditing, knowledge-graph, and inference code.
-- `gpt4o_extracted_merged.json` — extracted parameter triplets from the study corpus.
-- `triplets_gold_standard.json` — curated Gold Standard.
-- `causal_relations.json` — curated causal relations used for graph retrieval.
-- `judge_inputs.json` — inputs used for LLM-based evaluation.
-- `RQ2_judge_scores_canonical.json` — canonical judge scores.
-- `extractions.json` — extracted data used in the supplementary strawberry stability analysis.
-- `answers.json`, `answers_b5.json` — generated answers.
-- `audited_triplets.json`, `gold_audits.json` — audit outputs.
-- `injection_audits_corpus.json`, `injection_audits_oracle.json` — injection-benchmark audit outputs.
-- `judge_scores.json`, `scores_b5.json`, `ur_scores.json` — evaluation scores.
-- `step2_results.json`, `step3_audits.json` — detector and audit-stage outputs.
-- `stability_runs.json` — strawberry stability analysis outputs.
-- `MANIFEST_v2.json` — reproducibility manifest.
+| File | Role |
+|---|---|
+| `Reproduce_SelfAuditingGraphRAG_v2.ipynb` | the reproduction notebook — run this |
+| `pipeline.py` | detector, domain configuration tables, graph classes |
+| `run_full_experiment.py` | the context auditor (`GPT4oContextAuditor`) |
+| `step1_gpt4o_extraction.py` | triplet extraction, used only when re-extracting from the PDFs |
+| `pipeline_hf.py`, `metrics.py` | audit and aggregation for the strawberry corpus (Section 4.7) |
+| `gpt4o_extracted_merged.json` | 770 extracted parameter triplets (19 source documents) |
+| `triplets_gold_standard.json` | 60-item curated Gold Standard |
+| `causal_relations.json` | 374 curated causal relations |
+| `judge_inputs.json` | 20 evaluation queries and the generated answers |
+| `RQ2_judge_scores_canonical.json` | the originally recorded judge scores, kept for the before/after comparison in Part 9b |
+| `extractions.json`, `strawberry_config.py` | the independent 76-paper strawberry corpus and its configuration (Section 4.7) |
+| `repro_out/` | manifest, audit caches, judge scores, tables and figures |
 
-The `figures_v2/` directory contains the figures generated for the paper, and `tables_v2/` contains the corresponding result tables.
+### `repro_out/`
 
-## Reproduction
+| Path | Contents |
+|---|---|
+| `MANIFEST_v2.json` | run manifest: input hashes, package versions, every reported figure. **This is the authoritative record of the reported run.** |
+| `audited_triplets.json` | the 770 triplets with their Confidence Levels |
+| `answers_regenerated.json` | generated answers, five conditions |
+| `judge_scores_regenerated.json` | judge scores, three judges |
+| `t3_cap_diagnostic_v2.json` | peer-list cap diagnostic (Section 5.6) |
+| `tables_v2/` | reported tables (CSV) |
+| `figures_v2/` | reported figures (PNG and PDF) |
 
-The notebook is organized around the frozen artefacts used in the reported experiments. It can regenerate the reported tables and figures and includes verification steps for:
+## Running it
 
-1. retrieval identity across the controlled B3/B4/B5 comparison;
-2. the judge-free disclosure criterion and its per-query audit trail; and
-3. the joint Holm adjustment used for the confirmatory family.
+```bash
+pip install -r requirements.txt
+jupyter lab Reproduce_SelfAuditingGraphRAG_v2.ipynb
+```
 
-Some pipeline stages can make external API calls when rerun from scratch. The notebook uses the stored artefacts for the reported results unless a rerun is explicitly requested.
+The reported run used Python 3.12.7; the exact package versions are recorded in
+`repro_out/MANIFEST_v2.json` under `environment`, and `requirements.txt` is left
+unpinned so that the notebook records whatever versions the reader actually used.
 
-## Source PDFs
+Run the cells in order. The notebook writes to `repro_out/` and reuses the API
+caches that are already there, so **a full pass over the deposited caches makes no
+API calls**. Regenerating the answers or the judge scores from scratch does; set
+`OPENAI_API_KEY` (and `ANTHROPIC_API_KEY` for judge J2) in the environment if you
+want to do that.
 
-The source PDFs are not redistributed in this repository. Their bibliographic information is provided in Supplementary Table S1 of the paper.
+**Never hard-code an API key in a notebook cell.** The notebook reads keys from
+the environment.
 
-The extracted triplets used for the reported experiments are provided in `gpt4o_extracted_merged.json`.
+The local open-weight judge (J3, `meta-llama-3.1-8b-instruct`) is pinned to a
+named checkpoint served at `http://localhost:1234/v1`. The notebook raises an
+error rather than substituting a different model.
 
-## Evaluation conditions
+## A note on what is *not* here
 
-The main controlled comparison uses:
+Earlier runs of this pipeline left artefacts in `repro_out/` that the deposited
+notebook neither reads nor writes — among them a `MANIFEST.json` from a previous
+version. They are not included, because a stale manifest sitting beside the
+current one invites the reader to quote numbers that are not the ones reported.
+`MANIFEST_v2.json` is the manifest for the reported run, and it is the only one.
 
-- **B3:** multi-hop KG-RAG without Confidence Levels shown;
-- **B4:** the same retrieval with an explicit disagreement-reporting instruction;
-- **B5:** the same retrieval with audited Confidence Levels shown.
+## What is not included
 
-All three conditions use the same generator and the same retrieval subgraph.
+**The parsed source text of the 19 source documents is not redistributed.** Those
+documents are copyrighted; only the extracted parameter triplets, which are our
+own derived data, are included here. The notebook regenerates the parsed chunks
+from the source PDFs when the reader has them. The 19 documents are listed in
+Supplementary Table S1 of the paper.
 
-## Environment
+## Licence
 
-The experiments use the package versions recorded in `MANIFEST_v2.json`.
-
-API credentials are not included in this repository. API keys must be supplied through the appropriate environment variables when rerunning API-dependent stages.
+Code (`*.py`, `*.ipynb`) — MIT.
+Derived data (`*.json`, `*.csv`) and figures — CC BY 4.0.
 
 ## Citation
 
-Please cite the associated paper when using these materials.
+Cite the paper. The archived release of this repository has its own DOI:
 
-A DOI for the archived release will be added after the repository is registered with Zenodo.
+```
+[Zenodo DOI]
+```

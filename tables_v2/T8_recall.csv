@@ -1,9 +1,0 @@
-﻿tau,recall,matched
-0.40,96.7%,58
-0.50,90.0%,54
-0.60,85.0%,51
-0.70,63.3%,38
-0.80,46.7%,28
-0.90,38.3%,23
-
-# exact-string recall 20/60; not recovered at tau=0.5: 

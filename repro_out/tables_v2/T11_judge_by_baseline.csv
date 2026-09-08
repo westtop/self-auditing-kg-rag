@@ -1,0 +1,8 @@
+﻿system,label,J1,J2,J3,mean
+B1,Naive RAG,2.82,2.39,2.68,2.63
+B2,Single-hop KG-RAG,3.00,2.25,3.33,2.86
+B3,Multi-hop KG-RAG without auditing,3.58,2.95,4.35,3.63
+B4,Multi-hop KG-RAG + self-assessment prompt (control),3.40,2.75,3.81,3.32
+B5,Multi-hop KG-RAG with Self-Auditing (proposed),3.58,2.89,4.11,3.53
+
+# 285 recorded judgments; Krippendorff alpha (ordinal) overall 0.378

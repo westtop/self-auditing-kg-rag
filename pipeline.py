@@ -1,16 +1,25 @@
 #!/usr/bin/env python3
 """
-Self-Auditing GraphRAG Pipeline for Hydroponic Wasabi Management
-================================================================
-Version: v1.2
-Paper: Reliable Knowledge Triplet Extraction from Sparse Agricultural Documents
+Self-Auditing KG-RAG — detector, domain configuration and graph classes
+=======================================================================
 
-Modules:
-  Step 1: Triplet Extraction (from JSON / or GPT-4o in production)
-  Step 2: Rule-based Conflict Detector (T1/T2/T3)
-  Step 3: LLM Context Auditor (Confidence Score)
-  Step 4: Knowledge Graph Construction (dict-based, exportable to Neo4j)
-  Step 5: GraphRAG Inference (graph traversal + answer generation)
+Paper: Auditing the Evidence, Not the Answer: Making Literature Disagreement
+       Visible in Knowledge-Graph RAG
+
+What this module provides for the reported experiments:
+  ConflictDetector   rule stage, T1/T2/T3            (paper Sections 3.2–3.3)
+  THRESHOLDS and the unit tables                     (paper Supplementary S2)
+  KnowledgeGraph     graph container and traversal   (paper Section 3.5)
+
+The LLM context audit is NOT implemented in this module:
+it is GPT4oContextAuditor in run_full_experiment.py (paper Section 3.3).
+
+Confidence Levels for the reported run are assigned by assign_confidence()
+in the reproduction notebook, Part 4.
+
+Other entry points in this file (SelfAuditingPipeline, ContextAuditor,
+GraphRAGInference) are earlier interfaces retained for the standalone script
+and are not exercised by the reported experiments.
 """
 
 import json
@@ -558,13 +567,11 @@ class KnowledgeGraph:
         if final_conflict == "T3":
             confidence_level = "Disputed"
         elif final_conflict == "T3_undefined":
-            # Added 2026-07-13: a T3_candidate whose comparison evidence
-            # (condition-bearing peers for the same parameter) all traces
-            # back to a SINGLE source paper. There isn't enough independent
-            # corroboration to confidently call this either a confirmed
-            # contradiction (Disputed) or a cleared false positive
-            # (Verified), so it gets its own honest "insufficient evidence"
-            # bucket instead of being forced into a binary.
+            # NOTE: the reported experiments do not call this method.
+            # Confidence Levels for the reported run are assigned by assign_confidence()
+            # in the reproduction notebook (Part 4), which defines three levels only:
+            # Verified / Disputed / Conflicted. A T3_undefined gate result is mapped
+            # to Verified in the reported run (paper, Section 3.5).
             confidence_level = "Undefined"
         elif final_conflict in ("T1", "T2"):
             confidence_level = "Conflicted"

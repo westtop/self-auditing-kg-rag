@@ -1,7 +1,0 @@
-﻿confirmed_types,triplets
-T1,23
-T1 + T2,7
-T2,5
-T1 + T3_candidate,1
-
-# combinations Table 4 of the manuscript must cover

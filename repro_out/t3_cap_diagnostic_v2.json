@@ -1,0 +1,69 @@
+{
+  "n_t3_candidates": 34,
+  "n_gate_fired": 7,
+  "n_genuine_single_source": 2,
+  "n_truncated_by_cap": 5,
+  "genuine_ids": [
+    "EXT-0388",
+    "EXT-0389"
+  ],
+  "verdicts": {
+    "EXT-0496": {
+      "subject": "VPD",
+      "unit": "kPa",
+      "predicate": "upper_limit",
+      "object": "2.0",
+      "source_id": "S12",
+      "uncapped_sources": 2,
+      "audit_action": "clear",
+      "final_conflict": null,
+      "audit_log": "The flagged value from Taylor et al. 2025 is an upper limit for VPD in wasabi hydroponic cultivation, expressed in kPa. The comparison values from the S11 source are expressed in hPa and are specific to environmental conditions in various locations in Shizuoka prefecture, which are not directly comparable to a general cultivation recommendation. The only comparison value in kPa is from Langenfeld "
+    },
+    "EXT-0654": {
+      "subject": "growth_medium_temp",
+      "unit": "°C",
+      "predicate": "optimal_range",
+      "object": "12~13",
+      "source_id": "S15",
+      "uncapped_sources": 3,
+      "audit_action": "clear",
+      "final_conflict": null,
+      "audit_log": "The flagged value from Tanaka et al. 2009 is an 'optimal_range' for growth medium temperature, which is a general recommendation. The comparison values from 'S03-Effects of Environmental Controls on the Growth of Wasabi.pdf' and Sultana et al. 2003 are specific experimental conditions or measurements under various scenarios (e.g., night in winter, day-time in summer, axillary bud development). The"
+    },
+    "EXT-0655": {
+      "subject": "growth_medium_temp",
+      "unit": "°C",
+      "predicate": "upper_limit",
+      "object": "18",
+      "source_id": "S15",
+      "uncapped_sources": 3,
+      "audit_action": "clear",
+      "final_conflict": null,
+      "audit_log": "The flagged value of 18 °C as an upper limit for growth medium temperature from Tanaka et al. 2009 is not directly comparable to the other values because they are reported under specific conditions that are not necessarily equivalent to a general upper limit. The comparison values are specific to conditions like 'night in winter', 'day-time in summer', or specific growth stages like 'whole plant v"
+    },
+    "EXT-0659": {
+      "subject": "growth_medium_temp",
+      "unit": "°C",
+      "predicate": "set_value",
+      "object": "13",
+      "source_id": "S15",
+      "uncapped_sources": 3,
+      "audit_action": "clear",
+      "final_conflict": null,
+      "audit_log": "The flagged value of 13 °C from Tanaka et al. 2009 is a set value for growth medium temperature without a specified condition. The comparison values from 'S03-Effects of Environmental Controls on the Growth of Wasabi.pdf' provide specific conditions such as 'night in summer', 'day-time in winter', and 'main stem growth', which are not directly comparable to a general set value without conditions. "
+    },
+    "EXT-0663": {
+      "subject": "growth_medium_temp",
+      "unit": "°C",
+      "predicate": "set_value",
+      "object": "20",
+      "source_id": "S15",
+      "uncapped_sources": 3,
+      "audit_action": "clear",
+      "final_conflict": null,
+      "audit_log": "The flagged value of 20 °C from Tanaka et al. 2009 is a set value for growth medium temperature. The comparison values from S03-Effects of Environmental Controls on the Growth of Wasabi.pdf and Sultana et al. 2003 provide specific conditions such as 'night in winter', 'day-time in summer', 'whole plant vegetative growth', etc. These are specific experimental conditions or environmental controls, n"
+    }
+  },
+  "n_would_be_confirmed": 0,
+  "would_be_confirmed_ids": []
+}

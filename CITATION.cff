@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Auditing the Evidence, Not the Answer: Evidence-Level Conflict Detection Makes Literature Disagreement Visible in Knowledge-Graph RAG"
+title: "Auditing the Evidence, Not the Answer: Making Literature Disagreement Visible in Knowledge-Graph RAG"
 message: "If you use this repository or its reproducibility materials, please cite the associated paper."
 type: software
 authors:

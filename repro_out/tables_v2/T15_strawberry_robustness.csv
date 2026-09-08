@@ -1,0 +1,11 @@
+﻿analysis,n=19,n=38,n=57
+normalizer: plausible range (primary),0.077,0.046,0.032
+normalizer: interquartile range,0.167,0.094,0.062
+normalizer: standard deviation,0.220,0.130,0.093
+normalizer: observed range (exploratory),0.080,0.049,0.036
+aggregator: weighted_median,0.077,0.046,0.032
+aggregator: median,0.084,0.055,0.044
+aggregator: mean,0.078,0.067,0.065
+aggregator: trimmed_mean,0.078,0.064,0.061
+
+# trimmed-mean proportion 10%; max deviation at k=57 0.30 SD (DO)

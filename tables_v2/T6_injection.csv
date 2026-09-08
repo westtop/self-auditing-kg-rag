@@ -1,6 +1,0 @@
-﻿injected,n,detected,type_match,confirmed_corpus,confirmed_oracle
-T1,38,38,38,35,38
-T2,57,38,38,36,38
-T3,60,46,38,25,42
-
-# corpus-referenced is the system's rate; oracle-referenced is a ceiling obtained by showing the auditor the uncorrupted entry

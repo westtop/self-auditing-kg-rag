@@ -1,0 +1,6 @@
+﻿gold_id,subject,object,condition,flag,auditor
+GS-005,pH,6.4~8.0,"end of experiment, substrate dependent",T1,TRUE_CONFLICT
+GS-009,growth_medium_temp,13.5~28.1,"year-round cultivation, seasonal variation",T1,TRUE_CONFLICT
+GS-057,water_temp,1.5~19.5,"Kochi Prefecture, seasonal",T1,FALSE_ALARM
+
+# rule stage 3/60; after the audit 2/60
