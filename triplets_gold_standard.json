@@ -1,0 +1,550 @@
+{
+  "metadata": {
+    "version": "v1.5",
+    "description": "Gold Standard v1.5 — 53 + 7 verified items = 60",
+    "total_papers": 15,
+    "total_triplets": 60
+  },
+  "triplets": [
+    {
+      "id": "GS-001",
+      "subject": "DO",
+      "predicate": "optimal_range",
+      "object": "8 mg/L",
+      "unit": "mg/L",
+      "condition": "vermiculite substrate",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-002",
+      "subject": "DO",
+      "predicate": "measured_value",
+      "object": "6 mg/L",
+      "unit": "mg/L",
+      "condition": "rockwool substrate",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-003",
+      "subject": "EC",
+      "predicate": "range",
+      "object": "0.6~3.7",
+      "unit": "dS/m",
+      "condition": "nutrient concentration experiment",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-004",
+      "subject": "pH",
+      "predicate": "initial_value",
+      "object": "5.7",
+      "unit": null,
+      "condition": "start of experiment",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-005",
+      "subject": "pH",
+      "predicate": "final_value",
+      "object": "6.4~8.0",
+      "unit": null,
+      "condition": "end of experiment, substrate dependent",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-006",
+      "subject": "water_temp",
+      "predicate": "set_value",
+      "object": "18",
+      "unit": "°C",
+      "condition": "controlled environment",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-007",
+      "subject": "root_nitrogen",
+      "predicate": "measured_value",
+      "object": "5.28",
+      "unit": "% DW",
+      "condition": "vermiculite, DO 8 mg/L",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-008",
+      "subject": "root_nitrogen",
+      "predicate": "measured_value",
+      "object": "2.64",
+      "unit": "% DW",
+      "condition": "rockwool, DO 6 mg/L",
+      "ref": "[9]"
+    },
+    {
+      "id": "GS-009",
+      "subject": "growth_medium_temp",
+      "predicate": "range",
+      "object": "13.5~28.1",
+      "unit": "°C",
+      "condition": "year-round cultivation, seasonal variation",
+      "ref": "[11]"
+    },
+    {
+      "id": "GS-010",
+      "subject": "AITC",
+      "predicate": "measured_value",
+      "object": "1042",
+      "unit": "mg/kg",
+      "condition": "soil-grown rhizome",
+      "ref": "[28]"
+    },
+    {
+      "id": "GS-011",
+      "subject": "AITC",
+      "predicate": "measured_value",
+      "object": "1475",
+      "unit": "mg/kg",
+      "condition": "water-grown rhizome",
+      "ref": "[28]"
+    },
+    {
+      "id": "GS-012",
+      "subject": "water_temp",
+      "predicate": "optimal",
+      "object": "13",
+      "unit": "°C",
+      "condition": "indoor artificial light cultivation",
+      "ref": "[29]"
+    },
+    {
+      "id": "GS-013",
+      "subject": "air_temp",
+      "predicate": "tested_range",
+      "object": "16/20/25",
+      "unit": "°C",
+      "condition": "indoor cultivation",
+      "ref": "[29]"
+    },
+    {
+      "id": "GS-014",
+      "subject": "EC",
+      "predicate": "set_value",
+      "object": "0.5",
+      "unit": "dS/m",
+      "condition": "nutrient solution",
+      "ref": "[29]"
+    },
+    {
+      "id": "GS-015",
+      "subject": "DO",
+      "predicate": "critical_threshold",
+      "object": "9.5",
+      "unit": "ppm",
+      "condition": "below this = growth inhibition",
+      "ref": "[29]"
+    },
+    {
+      "id": "GS-016",
+      "subject": "water_temp",
+      "predicate": "measured_range",
+      "object": "5~19.5",
+      "unit": "°C",
+      "condition": "Kochi Prefecture, seasonal",
+      "ref": "[30]"
+    },
+    {
+      "id": "GS-017",
+      "subject": "DO",
+      "predicate": "measured_range",
+      "object": "7.2~13.5",
+      "unit": "ppm",
+      "condition": "Kochi Prefecture, seasonal",
+      "ref": "[30]"
+    },
+    {
+      "id": "GS-018",
+      "subject": "DO",
+      "predicate": "minimum_september",
+      "object": "7.2",
+      "unit": "ppm",
+      "condition": "summer, below 9.5 ppm threshold",
+      "ref": "[30]"
+    },
+    {
+      "id": "GS-019",
+      "subject": "water_temp",
+      "predicate": "measured_value",
+      "object": "11.4",
+      "unit": "°C",
+      "condition": "hydroponic system",
+      "ref": "[31]"
+    },
+    {
+      "id": "GS-020",
+      "subject": "water_temp",
+      "predicate": "measured_value",
+      "object": "9.8",
+      "unit": "°C",
+      "condition": "natural stream cultivation",
+      "ref": "[31]"
+    },
+    {
+      "id": "GS-021",
+      "subject": "EC",
+      "predicate": "measured_value",
+      "object": "0.64",
+      "unit": "mS/cm",
+      "condition": "hydroponic system",
+      "ref": "[31]"
+    },
+    {
+      "id": "GS-022",
+      "subject": "water_temp",
+      "predicate": "max_observed",
+      "object": "19.7",
+      "unit": "°C",
+      "condition": "near critical threshold",
+      "ref": "[31]"
+    },
+    {
+      "id": "GS-023",
+      "subject": "EC",
+      "predicate": "tested_range",
+      "object": "0.1/0.5/1.0/2.0",
+      "unit": "dS/m",
+      "condition": "concentration comparison",
+      "ref": "[32]"
+    },
+    {
+      "id": "GS-024",
+      "subject": "rhizome_weight",
+      "predicate": "max_value",
+      "object": "50",
+      "unit": "g",
+      "condition": "EC 2.0 dS/m",
+      "ref": "[32]"
+    },
+    {
+      "id": "GS-025",
+      "subject": "water_temp",
+      "predicate": "set_value",
+      "object": "13",
+      "unit": "°C",
+      "condition": "controlled",
+      "ref": "[32]"
+    },
+    {
+      "id": "GS-026",
+      "subject": "air_temp",
+      "predicate": "set_value",
+      "object": "16",
+      "unit": "°C",
+      "condition": "controlled",
+      "ref": "[32]"
+    },
+    {
+      "id": "GS-027",
+      "subject": "water_temp",
+      "predicate": "control_target",
+      "object": "20",
+      "unit": "°C",
+      "condition": "below 20°C operation",
+      "ref": "[33]"
+    },
+    {
+      "id": "GS-028",
+      "subject": "AITC",
+      "predicate": "measured_range",
+      "object": "1.21~2.32",
+      "unit": "mg/g FW",
+      "condition": "white shading net",
+      "ref": "[21]"
+    },
+    {
+      "id": "GS-029",
+      "subject": "AITC",
+      "predicate": "measured_range",
+      "object": "1.18~2.14",
+      "unit": "mg/g FW",
+      "condition": "black shading net",
+      "ref": "[21]"
+    },
+    {
+      "id": "GS-030",
+      "subject": "shading_rate",
+      "predicate": "tested_range",
+      "object": "36~78",
+      "unit": "%",
+      "condition": "colored shading nets",
+      "ref": "[21]"
+    },
+    {
+      "id": "GS-031",
+      "subject": "PPF",
+      "predicate": "optimal",
+      "object": "110",
+      "unit": "μmol/m²/s",
+      "condition": "artificial light, wasabi",
+      "ref": "[22]"
+    },
+    {
+      "id": "GS-032",
+      "subject": "PPF",
+      "predicate": "tested_range",
+      "object": "60~290",
+      "unit": "μmol/m²/s",
+      "condition": "artificial light experiment",
+      "ref": "[22]"
+    },
+    {
+      "id": "GS-033",
+      "subject": "photoperiod",
+      "predicate": "optimal",
+      "object": "12",
+      "unit": "hours",
+      "condition": "tested 8/12/16h",
+      "ref": "[22]"
+    },
+    {
+      "id": "GS-034",
+      "subject": "air_temp",
+      "predicate": "set_value",
+      "object": "17/14",
+      "unit": "°C",
+      "condition": "day/night, artificial light",
+      "ref": "[22]"
+    },
+    {
+      "id": "GS-035",
+      "subject": "water_temp",
+      "predicate": "set_value",
+      "object": "13",
+      "unit": "°C",
+      "condition": "artificial light cultivation",
+      "ref": "[22]"
+    },
+    {
+      "id": "GS-036",
+      "subject": "EC",
+      "predicate": "set_value",
+      "object": "1.3",
+      "unit": "dS/m",
+      "condition": "nutrient solution",
+      "ref": "[22]"
+    },
+    {
+      "id": "GS-037",
+      "subject": "air_temp",
+      "predicate": "upper_limit",
+      "object": "30",
+      "unit": "°C",
+      "condition": "above 30°C = growth damage",
+      "ref": "[23]"
+    },
+    {
+      "id": "GS-038",
+      "subject": "air_temp",
+      "predicate": "critical_range",
+      "object": "25~30",
+      "unit": "°C",
+      "condition": "stress zone for seedlings",
+      "ref": "[23]"
+    },
+    {
+      "id": "GS-039",
+      "subject": "water_temp",
+      "predicate": "optimal_range",
+      "object": "12~13",
+      "unit": "°C",
+      "condition": "traditional wasabi cultivation",
+      "ref": "[23]"
+    },
+    {
+      "id": "GS-040",
+      "subject": "PPFD",
+      "predicate": "optimal_range",
+      "object": "500~830",
+      "unit": "μmol/m²/s",
+      "condition": "greenhouse, Oregon",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-041",
+      "subject": "VPD",
+      "predicate": "max_threshold",
+      "object": "2.0",
+      "unit": "kPa",
+      "condition": "greenhouse",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-042",
+      "subject": "soil_moisture",
+      "predicate": "minimum",
+      "object": "95",
+      "unit": "% FC",
+      "condition": "greenhouse wasabi",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-043",
+      "subject": "Amax",
+      "predicate": "measured",
+      "object": "11.08",
+      "unit": "μmol/m²/s",
+      "condition": "at 828 μmol PPFD",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-044",
+      "subject": "CO2",
+      "predicate": "optimal_target",
+      "object": "1200",
+      "unit": "ppm",
+      "condition": "greenhouse enrichment",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-045",
+      "subject": "air_temp",
+      "predicate": "observed_range",
+      "object": "11.8~27.1",
+      "unit": "°C",
+      "condition": "greenhouse annual",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-046",
+      "subject": "glucosinolates",
+      "predicate": "max_value",
+      "object": "271.61",
+      "unit": "mmol/kg DW",
+      "condition": "rhizome, Chuankui-1 Leibo",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-047",
+      "subject": "GBPs",
+      "predicate": "max_value",
+      "object": "249.78",
+      "unit": "mmol/kg DW",
+      "condition": "rhizome",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-048",
+      "subject": "soil_pH",
+      "predicate": "range",
+      "object": "5.9~7.0",
+      "unit": null,
+      "condition": "Sichuan production areas",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-049",
+      "subject": "altitude",
+      "predicate": "range",
+      "object": "1400~2300",
+      "unit": "m",
+      "condition": "Leibo and Guangyuan",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-050",
+      "subject": "summer_air_temp",
+      "predicate": "average",
+      "object": "13~23",
+      "unit": "°C",
+      "condition": "Leibo 13°C, Guangyuan 23°C",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-051",
+      "subject": "WUE",
+      "predicate": "range",
+      "object": "3~6",
+      "unit": "g/L",
+      "condition": "ambient to elevated CO2",
+      "ref": "[20]"
+    },
+    {
+      "id": "GS-052",
+      "subject": "AITC",
+      "predicate": "proportion_of_ITC",
+      "object": "89~94",
+      "unit": "%",
+      "condition": "wasabi plants general",
+      "ref": "[25]"
+    },
+    {
+      "id": "GS-053",
+      "subject": "shading_rate",
+      "predicate": "optimal",
+      "object": "10",
+      "unit": "%",
+      "condition": "general recommendation",
+      "ref": "[25]"
+    },
+    {
+      "id": "GS-054",
+      "subject": "air_temp",
+      "predicate": "optimal_range",
+      "object": "8~18",
+      "unit": "°C",
+      "condition": "upland systems",
+      "ref": "[26]"
+    },
+    {
+      "id": "GS-055",
+      "subject": "summer_air_temp",
+      "predicate": "measured_value",
+      "object": "13",
+      "unit": "°C",
+      "condition": "Leibo planting base",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-056",
+      "subject": "altitude",
+      "predicate": "measured_value",
+      "object": "900",
+      "unit": "m",
+      "condition": "Leibo higher than Guangyuan",
+      "ref": "[27]"
+    },
+    {
+      "id": "GS-057",
+      "subject": "water_temp",
+      "predicate": "measured_range",
+      "object": "1.5~19.5",
+      "unit": "°C",
+      "condition": "Kochi Prefecture, seasonal",
+      "ref": "[30]"
+    },
+    {
+      "id": "GS-058",
+      "subject": "AITC",
+      "predicate": "measured_value",
+      "object": "99.38",
+      "unit": "mg%",
+      "condition": "rhizome",
+      "ref": "[30]"
+    },
+    {
+      "id": "GS-059",
+      "subject": "EC",
+      "predicate": "tested_range",
+      "object": "0.1~2.0",
+      "unit": "dS/m",
+      "condition": "concentration comparison",
+      "ref": "[32]"
+    },
+    {
+      "id": "GS-060",
+      "subject": "water_temp",
+      "predicate": "optimal_range",
+      "object": "12~13",
+      "unit": "°C",
+      "condition": "controlled environment",
+      "ref": "[33]"
+    }
+  ]
+}
